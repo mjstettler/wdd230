@@ -2,7 +2,9 @@
     header, footer {
         background-color: rgb(214, 241, 214);
         color: black;
+        
     }
+
     nav, nav a {
         background-color: rgb(45, 90, 32);
         color: white;
@@ -25,6 +27,8 @@
         grid-row: 2;
         grid-column: 2;
     }
-    
+    h2 {
+        grid-column: 1/3;
+    }
     
 }
