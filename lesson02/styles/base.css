@@ -1,0 +1,46 @@
+body {
+    font-family: 'Mooli', sans-serif;
+}
+header {
+    background-color: rgba(42, 43, 35, 0.87);
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+    font-size: x-large;
+
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+}
+h3 {
+    text-decoration: underline;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+}
+.card a {
+    font-style: italic;
+    font-weight: 600;
+}
+img {
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+footer {
+    background-color: rgba(42, 43, 35, 0.87);
+    color: whitesmoke;
+    text-align: center;
+    padding: .5rem;
+}

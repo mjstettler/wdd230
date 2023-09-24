@@ -1,0 +1,13 @@
+@media only screen and (min-width: 85em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    footer {
+        grid-row: 3;
+        grid-column: span 3;
+    }
+    section:nth-child(3) {
+        grid-column: span 1;
+    }
+}
