@@ -114,13 +114,13 @@ main h2 {
     grid-row: 1;
 }
 
-.card3 {
+.map {
     display: grid;
     border: 1px solid black;
     border-radius: .5rem;
     text-align: center;
 }
-.card3 iframe {
+.map iframe {
     display: block;
     width: 99.8%;    
 }
