@@ -1,0 +1,46 @@
+header {
+    background-color: #122430;
+    color: #e5ebef;
+    padding: 1rem;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Merriweather", serif;
+    
+}
+
+h2 {
+    background-color: #314a6a;
+    color: #e5ebef;
+    padding: .5rem;
+}
+header h2 {
+    background-color: #122430;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+.primary {
+    background-color: #122430;
+    color: white;
+}
+.secondary {
+    background-color: #314a6a;
+    color: white;
+}
+.accent1 {
+    background-color: #e5ebef;
+}
+.accent2 {
+    background-color: #677b95;
+}
+footer {
+    background-color: #677b95;
+    padding: 1rem;
+    display: grid;
+}
+footer p {
+    text-align: center;
+    font-weight: 400;
+    font-size: large;
+}
