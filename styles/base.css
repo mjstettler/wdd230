@@ -85,7 +85,7 @@ footer {
     border-radius: 1rem;
     background-color: whitesmoke;
     min-width: 219px;
-    font-size: large;
+    font-size: 1rem;
 }
 .card2 div {
     padding: 1rem;
@@ -95,11 +95,18 @@ footer {
     list-style-type: none;
 
 }
+.card1 li a {
+    padding: .2rem;
+}
+.card1 li a:hover {
+    color: orangered;
+}
 .card1 {
     grid-row: 2;
 }
 .card2 {
     grid-row: 3;
+    font-size: large;
 }
 .card2 div {
     display: grid;
@@ -163,6 +170,10 @@ main h2 {
 .open li a {
     display: block;
 }
+
+
+
+
 
 
 
