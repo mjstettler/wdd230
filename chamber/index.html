@@ -11,16 +11,22 @@
     <meta property="og:url" content="https://mjstettler.github.io/wdd230/chamber/index.html">
     <meta property="og:image" content="https://churchofjesuschristtemples.org/assets/img/temples/layton-utah-temple/layton-utah-temple-40940-main.jpg">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
-        
-        <img class="banner" src="" alt="">
+        <div class=" bannerdiv">
+        <img class="banner" src="images/mountains.jpg" alt="Snowy Mountains">
+        <button id="topButton">JOIN US</button>
+        </div>
         <h1>Layton Chamber of Commerce</h1>
     </header>
     <nav>
-        <button class="menu"></button>
+        <button class="menu">Menu ☰</button>
         <ul>
+            <li><a href="#">Home</a></li>
             <li><a href="">Discovery</a></li>
             <li><a href="">Directory</a></li>
             <li><a href="">Join</a></li>
@@ -28,11 +34,47 @@
     </nav>
 
     <main>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div>
+                <p>Sunny</p>
+            </div>
+        </section>
+
+        <section class="events">
+            <h2>Events</h2>
+            <div>
+                <p>Calendar of events</p>
+            </div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Spotlights</h2>
+            <div id="spotlight1">
+                <h3>hungry howies</h3>
+            </div>
+            <div id="spotlight2">
+                <h3>Fall Farmers Market</h3>
+            </div>
+            <div id="spotlight3">
+                <h3>Dibble Farms</h3>
+            </div>
+        </section>
 
     </main>
 
     <footer>
-
+        <div class="contact">
+            <p>Contact Info: <br> Layton, Utah, 84041 <br> Phone: (801)-888-8888</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3008.1097782981883!2d-111.96049401423176!3d41.066592970180366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1696481089300!5m2!1sen!2sus" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <button id="bottomButton">JOIN</button>
+        
+        <div class="info">
+        &copy; <span id="currentyear">2023</span>   |   Mike Stettler   |   WDD 230 Project  |   Modified: <span id="lastModified"></span>
+        </div>
     </footer>
     
 </body>
