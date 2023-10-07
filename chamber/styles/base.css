@@ -1,32 +1,121 @@
+* {
+    padding: 0px 2px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Merriweather", serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+li, a, button {
+    font-family: "Merriweather", sans-serif;
+}
+
 .banner {
     max-width: 100%;
 }
+
 .bannerdiv {
     position: relative;
+    text-align: center;
 }
+
+.topLogo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #314a6a;
+    max-width: 200px;
+    min-width: 110px;
+    width: 15%;
+}
+
+#menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: fit-content;
+    transform: rotate(0deg);
+    transition: 200ms;
+}
+
+
+
+.navbar li {
+    display: none;
+    float: none;
+    justify-content: center;
+    padding: 5px;
+    background-color: #1224306f;
+    text-align: center;
+}
+
+.navbar li a {
+    display: block;
+    color: #e5ebef;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+    
+    /* font-size: 1.5vw; */
+    
+
+}
+.navbar li:hover {
+    color: #122430;
+    background-color: #e5ebef;
+    transition: all 0.3s ease-in 0s;
+    
+}
+.navbar a:hover {
+    color: #122430;
+}
+
+.centered {
+    color: #e5ebef;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background-color: #677b95a2; */
+    justify-content: center;
+    font-size: 3vw;
+}
+
 #topButton {
     position: absolute;
-    top: 75%;
-    right: 15%;
-    font-size: 2.5vw;
+    top: 80%;
+    left: 50%;
+    font-size: larger;
     background-color: #e5ebef;
     opacity: 65%;
     color: #122430;
-    
+    padding: .2rem 1%;
+    transform: translate(-50%, -50%);
 }
+
 #topButton:hover {
     opacity: 95%;
 }
-iframe {
-    max-width: 200px;
-    max-height: 200px;
-}
+/* iframe { */
+    /* max-width: 200px; */
+    /* max-height: 200px; */
+/* } */
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     text-align: center;
+    color: #e5ebef;
+    background-color: #122430;
 }
+
 #bottomButton {
     display: block;
     grid-column: 6/8;
@@ -35,19 +124,48 @@ footer {
     max-height:25%;
     
 }
+
 footer .contact {
     grid-column: 1/3;
     grid-row: 1;
 }
+
 footer .map {
     grid-column: 1/3;
     grid-row: 2;
 }
+
 footer .info {
     grid-column: 1/8;
     grid-row: 3;
     padding: 1rem
 }
+
+#menu::before {
+    content: '☰';
+    font-size: x-large;
+    
+}
+#menu.open::before {
+    content: "✖";
+}
+#menu:active {
+    transform: rotate(-180deg) ;
+}
+
+.open li {
+    display: block;
+}
+
+.open li a {
+    display: block;
+
+}
+
+
+
+
+
 
 
 

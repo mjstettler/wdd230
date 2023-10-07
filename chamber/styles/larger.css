@@ -1,0 +1,28 @@
+@media screen and (min-width: 900px) {
+
+    .navbar li {
+        float: left;
+        background-color: none;
+    }
+
+    .navbar a {
+        font-size: large;
+    }
+
+    nav {
+        
+        top: -10px;
+    }
+
+    .navbar li {
+        border-bottom: 1px #e5ebef solid; 
+        border-right: 1px #e5ebef solid;
+    }
+    .navbar li:last-child {
+        border-right: none;
+    }
+
+    #topButton {
+        font-size: 1.8vw;
+    }
+}

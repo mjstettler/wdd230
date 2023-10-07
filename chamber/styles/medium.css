@@ -1,0 +1,34 @@
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+    .navbar li {
+        display: block;
+    }
+
+    .navbar li {
+        background-color: none;
+        
+    }
+    nav {
+        position: absolute;
+        display: flex;
+        top: .2rem;
+        right: 1rem;
+    }
+
+    #topButton {
+        position: absolute;
+        top: 77%;
+        left: 20%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

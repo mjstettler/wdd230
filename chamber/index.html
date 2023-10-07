@@ -11,25 +11,33 @@
     <meta property="og:url" content="https://mjstettler.github.io/wdd230/chamber/index.html">
     <meta property="og:image" content="https://churchofjesuschristtemples.org/assets/img/temples/layton-utah-temple/layton-utah-temple-40940-main.jpg">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
+        
         <div class=" bannerdiv">
-        <img class="banner" src="images/mountains.jpg" alt="Snowy Mountains">
-        <button id="topButton">JOIN US</button>
+            <img class="banner" src="images/mountains.jpg" alt="Snowy Mountains">
+            <button id="topButton">JOIN US</button>
+            <img class="topLogo" src="images/lightlogo.png" alt="Commerce Logo">
+            <h1 class="centered">Layton<br>Chamber of Commerce</h1>
         </div>
-        <h1>Layton Chamber of Commerce</h1>
+        
     </header>
     <nav>
-        <button class="menu">Menu ☰</button>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="">Discovery</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
+        <button id="menu" class=""></button>
+        <ul class="navbar">
+            <li><a class="" href="#"><i class='fa fa-fw fa-home'></i> Home</a></li>
+            <li><a class="" href=""><i class='fa fa-fw fa-compass'></i> Discover</a></li>
+            <li><a class="" href=""><i class='fa fa-fw fa-address-book'></i> Directory</a></li>
+            <li><a class="" href=""><i class='fa fa-fw fa-group'></i> Join</a></li>
         </ul>
     </nav>
 
@@ -73,9 +81,11 @@
         <button id="bottomButton">JOIN</button>
         
         <div class="info">
-        &copy; <span id="currentyear">2023</span>   |   Mike Stettler   |   WDD 230 Project  |   Modified: <span id="lastModified"></span>
+        &copy; <span id="currentyear"></span>   |   Mike Stettler   |   WDD 230 Project  |   <!--Modified:--> <span id="lastModified"></span>
         </div>
     </footer>
-    
+    <script src="scripts/modified.js"></script>
+    <script src="scripts/events.js"></script>
+
 </body>
 </html>
