@@ -18,7 +18,7 @@ button.addEventListener('click' , ()=> {
         input.value = '';
     
 } else {
-    alert("Please enter your Favorite BOM Book and Chapter");
+    alert("Please enter your favorite Book and Chapter");
 }
 });
 
