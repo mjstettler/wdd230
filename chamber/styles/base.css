@@ -15,6 +15,9 @@ li, a, button {
     cursor:pointer;
 }
 
+button {
+    background-color: #e5ebef;
+}
 button:hover {
     box-shadow: 0 12px 16px 0 #e5ebef4e, 0 17px 50px 0 #e5ebef4e;
 }
