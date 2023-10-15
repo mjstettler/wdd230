@@ -153,6 +153,7 @@ main {
 .spotlights {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 1rem;
 }
 
 #spotlight1, #spotlight2, #spotlight3, #spotlight4 {
@@ -211,7 +212,10 @@ footer .contact {
 footer .map {
     grid-column: 1/8;
     grid-row: 4;
+}
 
+iframe {
+    width: 100%;
 }
 
 footer .info {
