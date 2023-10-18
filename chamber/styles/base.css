@@ -1,6 +1,6 @@
-* {
-    padding: 0px 2px;
-}
+
+
+
 
 h1,h2,h3,h4,h5,h6 {
     font-family: "Merriweather", serif;
@@ -60,6 +60,9 @@ button:hover {
     width: 29px;
 }
 
+ul {
+    padding-left: 0;
+}
 .navbar li {
     display: none;
     float: none;
