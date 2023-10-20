@@ -19,10 +19,15 @@ button:hover {
     box-shadow: 0 12px 16px 0 #e5ebef4e, 0 17px 50px 0 #e5ebef4e;
 }
 
-.heroDiv img:nth-child(1) {
-    max-width: 100%;  
-    min-width: 560px;
-    overflow: hidden;
+/* .heroDiv img:nth-child(1) { */
+    /* max-width: 100%;   */
+    /* min-width: 560px; */
+    /* overflow: hidden; */
+/* } */
+
+.heroDiv img:nth-child(3) {
+    width: 100%;
+    height: auto;
 }
 
 .heroDiv {
@@ -34,7 +39,7 @@ button:hover {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background-color: #314a6a;
+    /* background-color: #314a6ad7; */
     max-width: 200px;
     min-width: 110px;
     width: 15%;
@@ -49,11 +54,20 @@ button:hover {
     transition: 200ms;
 }
 
+.navbar li:hover .icon {
+    filter: invert(100%);
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+    padding-right: 5px;
+}
+
 .darkToggle {
     position: absolute;
     top: 5px;
     right: 5px;
-
 }
 
 #darkButton {
@@ -70,6 +84,7 @@ ul {
     padding: 5px;
     background-color: #122430;
     text-align: center;
+    
 }
 
 .navbar li a {
@@ -96,6 +111,7 @@ ul {
 
 h1 {
     color: #e5ebef;
+    background-color: #12243086;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -104,6 +120,7 @@ h1 {
     /* background-color: #677b95a2; */
     justify-content: center;
     font-size: x-large;
+    padding: 1rem;
 }
 
 #topButton {

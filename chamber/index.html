@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -24,12 +23,21 @@
     <header>
         
         <div class="heroDiv">
-            <img src="images/mountains.webp" alt="Snowy Mountains">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Business meeting" width="1.5" height="1">
+            </picture>
+            <!-- <img src="images/mountains.webp" alt="Snowy Mountains"> -->
             <button id="topButton" aria-label="Join us">JOIN US</button>
-            <img class="topLogo" src="images/lightlogo.png" alt="Commerce Logo">
+            <picture>
+                <source srcset="images/logo-no.webp" media="(max-width: 1000px)">
+                <img class="topLogo" src="images/logo-words.webp" alt="Commerce Logo">
+            </picture>
+            
             <h1>Layton<br>Chamber of Commerce</h1>
             <div class="darkToggle">
-                <button id="darkButton" aria-label="Dark Mode" onclick=""><i id="darkIcon" class='fa fa-sun-o'></i></button>
+                <button id="darkButton" aria-label="Dark Mode" onclick="">🔆</button>
             </div>
         </div>
         
@@ -37,14 +45,14 @@
     <nav>
         <button id="menu" aria-label="Menu" class=""></button>
         <ul class="navbar">
-            <li><a class="" href="#"><i class='fa fa-fw fa-home'></i> Home</a></li>
-            <li><a class="" href="#"><i class='fa fa-fw fa-compass'></i> Discover</a></li>
-            <li><a class="" href="#"><i class='fa fa-fw fa-address-book'></i> Directory</a></li>
-            <li><a class="" href="#"><i class='fa fa-fw fa-group'></i> Join</a></li>
+            <li><a class="" href="#"><img class="icon" src="images/light-home.svg" alt="Home icon"> Home</a></li>
+            <li><a class="" href="#"><img class="icon" src="images/compass.webp" alt="Discover icon"> Discover</a></li>
+            <li><a class="" href="#"><img class="icon" src="images/directory.webp" alt="Directory icon"> Directory</a></li>
+            <li><a class="" href="#"><img class="icon" src="images/group.webp" alt="Join icon"> Join</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="main">
         <div class="section1">
             <section class="weather">
                 <h2>Weather</h2>
@@ -93,7 +101,7 @@
         </div>
         
         <div>
-            <img class="bottomLogo" src="images/lightlogo.png" alt="Commerce Logo">
+            <img class="bottomLogo" src="images/logo-words.webp" alt="Commerce Logo">
         </div>
 
         <div class="info">
