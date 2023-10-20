@@ -23,11 +23,11 @@
 <body>
     <header>
         
-        <div class=" heroDiv">
-            <img class="heroImg" src="images/mountains.webp" alt="Snowy Mountains">
+        <div class="heroDiv">
+            <img src="images/mountains.webp" alt="Snowy Mountains">
             <button id="topButton" aria-label="Join us">JOIN US</button>
             <img class="topLogo" src="images/lightlogo.png" alt="Commerce Logo">
-            <h1 class="centered">Layton<br>Chamber of Commerce</h1>
+            <h1>Layton<br>Chamber of Commerce</h1>
             <div class="darkToggle">
                 <button id="darkButton" aria-label="Dark Mode" onclick=""><i id="darkIcon" class='fa fa-sun-o'></i></button>
             </div>
@@ -49,7 +49,9 @@
             <section class="weather">
                 <h2>Weather</h2>
                 <div>
-                    <p>Sunny</p>
+                    <p>Temperature: <span id="temp">49</span>&degF</p>
+                    <p>Wind Speed: <span id="wind">25</span> mph</p>
+                    <p>Wind Chill: <span id="chill"></span></p>
                 </div>
             </section>
 
@@ -100,6 +102,7 @@
     </footer>
     <script src="scripts/dates.js"></script>
     <script src="scripts/events.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 </html>

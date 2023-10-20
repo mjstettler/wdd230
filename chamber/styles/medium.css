@@ -5,23 +5,26 @@
     .navbar li {
         display: block;
         padding: 1px;
+        float: left;
     }
     
     nav {
         position: absolute;
-        display: flex;
-        top: 30px;
+        top: 25%;
         right: .56rem;
     }
 
     .navbar {
         margin-top: 0;
+        
     }
 
     #topButton {
+        display: block;
         position: absolute;
         top: 77%;
         left: 20%;
+        padding: .8rem;
     }
 
     .centered {
