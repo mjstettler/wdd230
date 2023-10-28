@@ -1,0 +1,1 @@
+document.getElementById("modified").innerText = `${document.lastModified}`
