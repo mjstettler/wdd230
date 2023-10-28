@@ -12,14 +12,14 @@
     <link rel="icon" href="favicon2.ico" type="image/x-icon">
     <title>Mike Stettler - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css" media="screen and (min-width: 640px)">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/larger.css" >
 
 
 </head>
 <body>
     <header>
-        <img class="profileHeader" id="profile" src="images/small-profile.webp" alt="Picture of the extremely handsome Mike Stettler, author of this page">
+        <img class="profileHeader" id="profile" src="images/small-profile.webp" alt="Picture of the extremely handsome Mike Stettler, author of this page" loading="lazy">
         <h1 class="profileHeader">Mike Stettler</h1>
     </header>
 
@@ -37,8 +37,8 @@
     <main>
         <div class="hero">
             <picture>
-                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
-                <img src="images/hero.webp" alt="Belem Brazil Temple" width="1500" height="750">
+                <source media="(max-width: 450px)" srcset="images/hero-small.webp">
+                <img src="images/hero.webp" alt="Belem Brazil Temple" width="1500" height="750" loading="lazy">
             </picture>
             <div>
                 <p>Belem Brazil Temple</p>
@@ -80,7 +80,7 @@
         <p>
             &copy; <span id="currentyear"></span>   |   Mike Stettler   |   Utah 
         </p>
-        <img src="images/utahflag.svg" alt="State flag of Utah, United States" width="100">
+        <img src="images/utahflag.svg" alt="State flag of Utah, United States" width="100" loading="lazy">
 
         <p id="lastModified"></p>
     </footer>
