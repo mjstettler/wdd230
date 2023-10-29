@@ -75,7 +75,6 @@
 
     .main__discover {
         grid-template-columns: 2fr 3fr 1fr;
-        grid-template-rows: repeat(1fr, 6);
     }
 
     .img__discover {
