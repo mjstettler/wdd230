@@ -52,40 +52,36 @@
         </ul>
     </nav>
 
-    <main>
-        <div class="section1">
-            <section class="weather">
-                <h2>Weather</h2>
-                <div>
-                    <p>Temperature: <span id="temp">49</span>&deg;F</p>
-                    <p>Wind Speed: <span id="wind">25</span> mph</p>
-                    <p>Wind Chill: <span id="chill"></span></p>
-                </div>
-            </section>
-
-            <section class="events">
-                <h2>Events</h2>
-                <div>
-                    <p>Calendar of events</p>
-                </div>
-            </section>
+    <main class="main__discover">
+        <div class="container__discover">
+            <h3>Trunk or Treat</h3>
+            <img src="images/Pumpkin.svg" loading="lazy" alt="Jack'o'lantern">
+            <p>Join us Tuesday October 31st, Halloween in the Layton Commons Park for a spooktacular trunk or treat and costume contest. This is a family friendly event. The festivities will begin at 2:00pm and will go till 5:00pm. Homemade Rootbeer, Candy, Donuts, Oh my sounds like fun! Winners of the costume contest will be announced afterwards.</p>
+        </div>
+        
+        <div class="container__discover">
+            <h3>Halloween Dinner Special!</h3>
+            <img src="images/Pizza.svg" loading="lazy" alt="Pizza">
+            <p>Papa Murphies Halloween special. Mention the Layton Chamber of Commerce or use Code:<strong>"LaytonCC"</strong> online to get $3 off the <a target="_blank" href="https://www.papamurphys.com/">Jack-O Pizza</a></p>
+        </div>
+        
+        <div class="container__discover">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&showTitle=0&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showNav=1&src=OGVlZmYxOTJhY2YzM2EwNzZiMDlmOGFiYTUzMDNiMDViZmFjOTY5M2I0ZDUyZDBjMWI2MmUyMTdhZGI1NjgyM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" width="500" height="800" scrolling="no"></iframe>
         </div>
 
-        <section class="spotlights">
-            <h2>Spotlights</h2>
-            <div id="spotlight1">
-                <h3>hungry howies</h3>
-            </div>
-            <div id="spotlight2">
-                <h3>Fall Farmers Market</h3>
-            </div>
-            <div id="spotlight3">
-                <h3>Dibble Farms</h3>
-            </div>
-            <div id="spotlight4">
-                <h3>FiiZ</h3>
-            </div>
-        </section>
+        <div class="container__discover">
+            <h3><span id="date">Howdy Partner!</span></h3>
+        </div>
+        
+
+        <div class="img__discover">
+            <img class="img__card" src="images/adams.webp" alt="bear placeholder image" loading="lazy" >
+            <img class="img__card" src="images/bird.webp" alt="bear placeholder image" loading="lazy">
+            <img class="img__card" src="images/dartside.webp" alt="bear placeholder image" loading="lazy">
+            <img class="img__card" src="images/surf.webp" alt="bear placeholder image" loading="lazy">
+            <img class="img__card" src="images/antelope.webp" alt="bear placeholder image" loading="lazy">
+            <img class="img__card" src="images/escape.webp" alt="bear placeholder image" loading="lazy">
+        </div>
 
     </main>
 
@@ -110,7 +106,7 @@
     </footer>
     <script src="scripts/dates.js"></script>
     <script src="scripts/events.js"></script>
-    <script src="scripts/windchill.js"></script>
+    
 
 </body>
 </html>
