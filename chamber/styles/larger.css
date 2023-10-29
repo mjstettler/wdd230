@@ -108,7 +108,14 @@
     .img__card {
         filter: blur(4px);
     }
+
+    figure figCaption {
+        display: none;
+    }
     
+    figure:hover figCaption {
+        display: block;
+    }
     .img__card:hover {
         box-shadow: 10px 5px 10px gray;
         filter: blur(0);

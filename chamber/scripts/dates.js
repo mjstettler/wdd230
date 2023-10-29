@@ -5,21 +5,30 @@ document.getElementById("currentyear").innerText = new Date().getFullYear();
 const msInDay = 84600000;
 const today = Date.now();
 const lastVisit = localStorage.getItem('visit');
-const daysAgo = today-lastVisit;
+const timeBetween = today-lastVisit;
 
-console.log(daysAgo);
-console.log(today);
+
+
+function daysAgo(msInDay, timeBetween) {
+    if (Math.floor((timeBetween*2)/msInDay) < 1) {
+        return 0;
+    } else {
+        return Math.floor(timeBetween/msInDay);
+    }
+    
+}
+
 localStorage.setItem('visit', today)
 
 if (lastVisit == 0) {
     document.querySelector('#date').textContent = 'Welcome! Let us know if you have an questions.';
-} else if (lastVisit < msInDay) {
+} else if (timeBetween < msInDay) {
     document.querySelector('#date').textContent = 'Back so soon! Awesome!';
 } else {
-    if (lastVisit > (lastVisit+msInDay) && lastVisit < (lastVisit+msInDay*2)) {
-        document.querySelector('#date').textContent = 'You last visited '+ lastVisit + ' day ago.';
+    if (timeBetween > msInDay && timeBetween < (msInDay*2)) {
+        document.querySelector('#date').textContent = 'You last visited '+ daysAgo(msInDay, timeBetween) + ' day ago.';
     } else {
-        document.querySelector('#date').textContent = 'You last visited ' + lastVisit + ' days ago.';
+        document.querySelector('#date').textContent = 'You last visited ' + daysAgo(msInDay, timeBetween) + ' days ago.';
     }
 };
 
