@@ -1,0 +1,37 @@
+table {
+    
+    margin: 200px auto;
+    border-collapse: collapse;
+
+}
+
+caption {
+    caption-side: bottom;
+    padding: 15px;
+    font-size: .8rem;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px 18px;
+}
+
+
+thead tr:nth-of-type(1) {
+    background-color: rgb(103, 1, 1);
+    color: whitesmoke;
+}
+
+tr:nth-child(2), tbody tr th:nth-child(1) {
+    background-color: rgb(149, 65, 0);
+    color: whitesmoke;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+    
+}
+
+
+
+
