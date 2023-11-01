@@ -19,6 +19,10 @@ button:hover {
     box-shadow: 0 12px 16px 0 #e5ebef4e, 0 17px 50px 0 #e5ebef4e;
 }
 
+header {
+    background-color: #122430;
+}
+
 /* .heroDiv img:nth-child(1) { */
     /* max-width: 100%;   */
     /* min-width: 560px; */
@@ -141,8 +145,8 @@ h1 {
 }
 
 main {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .section1 {
@@ -242,7 +246,8 @@ footer .map {
 }
 
 .map iframe {
-    width: 100%;
+    max-width: 800px;
+
 }
 
 footer .info {
@@ -279,6 +284,7 @@ footer .info {
     grid-template-columns: 1fr;
     gap: 20px;
     padding-top: 20px;
+
 }
 
 .container__discover {
