@@ -2,11 +2,15 @@ form input {
     display: block;
 }
 
+form {
+    max-width: 460px;
+}
 form fieldset {
     margin: 2rem 0;
     border: 2px solid rgb(45, 90, 32);
     border-radius:  10px;
     padding: .5rem 5%;
+    
 }
 
 form legend {
@@ -31,7 +35,7 @@ form label.top input {
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 20rem;
+    max-width: 18rem;
     background-color: rgba(0,0,0,0.1);
 }
 
@@ -51,6 +55,14 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 }
+form input.submitBtn:hover {
+    box-shadow: 7px 5px 8px gray;
+    cursor: pointer;
+}
+form input.rate:hover {
+    cursor:pointer;
+}
+
 
 form label.top input:required {
     border-left: red solid 6px;
