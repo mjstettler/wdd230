@@ -30,17 +30,39 @@
         </ul>
     </nav>
     <main>
-        <form method="get" action="">
-            <caption>* indicates required field</caption><br>
-            <label for="userName">Username*:</label>
-            <input type="text" id="userName" name="userName" required><br>
-            <label for="pwd">Password*:</label>
-            <input type="password" id="pwd" name="pwd" pattern="[a-zA-Z0-9].{8,}" required><br>
-            <label for="pwdConfirm">Confirm password*</label>
-            <input type="password" id="pwdConfirm" name="pwdConfirm" required><br>
-            <label for="email">Email*:</label>
-            <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                title="Please enter a valid email address">
+        <div id="messageAlert"> </div>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Account Setup</legend>
+                <label class="top">Username* <input type="text" id="userName" name="userName" required></label>
+                <label class="top" for="pwd">Password *<input type="password" id="pwd" name="pwd"
+                        pattern="[a-zA-Z0-9].{8,}" required></label>
+                <label class="top" for="pwdConfirm">Confirm password* <input type="password" id="pwdConfirm"
+                        name="pwdConfirm" required></label>
+                <label class="top" for="email">Email* <input type="email" name="email" id="email" required
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+
+                <div class="slider">
+                    <label class="top" for="r">Page Rating </label>
+                    <div class="indicator" id="rangevalue">0</div>
+                    <input class="rate" type="range" id="r" name="r" min="0" max="10" value="0" step="1"
+                        list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </div>
+                <input type="submit" value="Create Account" class="submitBtn">
+            </fieldset>
 
         </form>
 
@@ -53,6 +75,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
 
 </body>
 
