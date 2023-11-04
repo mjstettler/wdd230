@@ -31,13 +31,12 @@
                 <img class="heroImg" src="images/mountains.webp" alt="Mountain peaks" loading="lazy">
             </picture>
 
-            <button id="topButton" aria-label="Join us">JOIN US</button>
             <picture>
                 <source srcset="images/logo-no.webp" media="(max-width: 1000px)">
                 <img class="topLogo" src="images/logo-words.webp" alt="Commerce Logo">
             </picture>
 
-            <h1>Layton<br>Chamber of Commerce</h1>
+            <h1>Join the Community</h1>
             <div class="darkToggle">
                 <button id="darkButton" aria-label="Dark Mode" onclick="">🔆</button>
             </div>
@@ -58,6 +57,137 @@
     </nav>
 
     <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Account Setup</legend>
+                <fieldset>
+                    <legend class="heading">Personal Information</legend>
+                    <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label class="top">Title/Position <input type="text" name="title" id="title"
+                            pattern=".{,7}"></label>
+                    <label class="top">Email* <input type="email" name="email" id="email"
+                            placeholder="YourEmail@gmail.com" required></label>
+                    <label>Phone* <input type="tel" name="phone" id="phone" placeholder="5551234545" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend class="heading">Business Information</legend>
+                    <label>Business/Organization* <input type="text" name="org" id="org" required></label>
+                    <div>Membership Tier</div>
+                    <label class="side"><input type="radio" name="tier" value="NP">NP (Non-Profit)</label>
+                    <label class="side"><input type="radio" name="tier" value="Bronze">Bronze</label>
+                    <label class="side"><input type="radio" name="tier" value="Silver">Silver</label>
+                    <label class="side"><input type="radio" name="tier" value="Gold">Gold</label>
+                    <label class="side">Description of Business <textarea name="description" id="description" cols="30"
+                            rows="10"></textarea></label>
+                    <label><input type="hidden" name="timeStamp" id="timeStamp"></label>
+                </fieldset>
+                <input type="submit" name="joinBtn" id="joinBtn" value="Join the Community">
+            </fieldset>
+        </form>
+
+        <table>
+            <caption>Membership Benefit Comparison</caption>
+            <caption>*NP - Non-Profits recevieve Membership free</caption>
+            <thead>
+                <tr>
+                    <th colspan="6" scope="colgroup">Chamber Membership Tiers</th>
+                </tr>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Bronze</th>
+                    <th>Silver</th>
+                    <th>Gold</th>
+                    <th>NP*</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Networking</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Chamber Directory Listing</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Member Discounts</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Business Resources</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Community Involvement</th>
+                    <td>✖</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Visibility & Credibility</th>
+                    <td>✖</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Access to Government Resources</th>
+                    <td>✖</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Business Development</th>
+                    <td>✖</td>
+                    <td>✖</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Health & Insurance Program</th>
+                    <td>✖</td>
+                    <td>✖</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Legal & Regulatory Assistance</th>
+                    <td>✖</td>
+                    <td>✖</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Business Referrals</th>
+                    <td>✖</td>
+                    <td>✖</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Publicity & Recognition</th>
+                    <td>✖</td>
+                    <td>✖</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
 
 
 
