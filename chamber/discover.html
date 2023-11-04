@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,43 +14,45 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
     <header>
-        
+
         <div class="heroDiv">
             <picture>
-                <img src="images/mountains.webp" alt="">
-                
-                
-                
+                <img class="heroImg" src="images/mountains.webp" alt="">
             </picture>
-            <!-- <img src="images/mountains.webp" alt="Snowy Mountains"> -->
-            
+
+
             <picture>
                 <source srcset="images/logo-no.webp" media="(max-width: 1000px)">
                 <img class="topLogo" src="images/logo-words.webp" alt="Commerce Logo">
             </picture>
-            
+
             <h1>Discover</h1>
             <div class="darkToggle">
                 <button id="darkButton" aria-label="Dark Mode" onclick="">🔆</button>
             </div>
         </div>
-        
+
     </header>
     <nav>
         <button id="menu" aria-label="Menu" class=""></button>
         <ul class="navbar">
-            <li><a class="" href="index.html"><img class="icon" src="images/light-home.svg" alt="Home icon"> Home</a></li>
-            <li><a class="" href="discover.html"><img class="icon" src="images/compass.webp" alt="Discover icon"> Discover</a></li>
-            <li><a class="" href="#"><img class="icon" src="images/directory.webp" alt="Directory icon"> Directory</a></li>
-            <li><a class="" href="#"><img class="icon" src="images/group.webp" alt="Join icon"> Join</a></li>
+            <li><a class="" href="index.html"><img class="icon" src="images/light-home.svg" alt="Home icon"> Home</a>
+            </li>
+            <li><a class="" href="discover.html"><img class="icon" src="images/compass.webp" alt="Discover icon">
+                    Discover</a></li>
+            <li><a class="" href="#"><img class="icon" src="images/directory.webp" alt="Directory icon"> Directory</a>
+            </li>
+            <li><a class="" href="join.html"><img class="icon" src="images/group.webp" alt="Join icon"> Join</a></li>
         </ul>
     </nav>
 
@@ -57,23 +60,30 @@
         <div class="container__discover">
             <h2>Trunk or Treat</h2>
             <img src="images/Pumpkin.svg" loading="lazy" alt="Jack'o'lantern">
-            <p>Join us Tuesday October 31st, Halloween in the Layton Commons Park for a spooktacular trunk or treat and costume contest. This is a family friendly event. The festivities will begin at 2:00pm and will go till 5:00pm. Homemade Rootbeer, Candy, Donuts, Oh my sounds like fun! Winners of the costume contest will be announced afterwards.</p>
+            <p>Join us Tuesday October 31st, Halloween in the Layton Commons Park for a spooktacular trunk or treat and
+                costume contest. This is a family friendly event. The festivities will begin at 2:00pm and will go till
+                5:00pm. Homemade Rootbeer, Candy, Donuts, Oh my sounds like fun! Winners of the costume contest will be
+                announced afterwards.</p>
         </div>
-        
+
         <div class="container__discover">
             <h2>Halloween Dinner Special!</h2>
             <img src="images/Pizza.svg" loading="lazy" alt="Pizza">
-            <p>Papa Murphies Halloween special. Mention the Layton Chamber of Commerce or use Code:<strong>"LaytonCC"</strong> online to get $3 off the <a target="_blank" href="https://www.papamurphys.com/">Jack-O Pizza</a></p>
+            <p>Papa Murphies Halloween special. Mention the Layton Chamber of Commerce or use
+                Code:<strong>"LaytonCC"</strong> online to get $3 off the <a target="_blank"
+                    href="https://www.papamurphys.com/">Jack-O Pizza</a></p>
         </div>
-        
+
         <div class="container__discover">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&showTitle=0&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showNav=1&src=OGVlZmYxOTJhY2YzM2EwNzZiMDlmOGFiYTUzMDNiMDViZmFjOTY5M2I0ZDUyZDBjMWI2MmUyMTdhZGI1NjgyM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" width="500" height="800"></iframe>
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&showTitle=0&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showNav=1&src=OGVlZmYxOTJhY2YzM2EwNzZiMDlmOGFiYTUzMDNiMDViZmFjOTY5M2I0ZDUyZDBjMWI2MmUyMTdhZGI1NjgyM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00"
+                width="500" height="800"></iframe>
         </div>
 
         <div class="container__discover">
             <h2><span id="date">Howdy Partner!</span></h2>
         </div>
-        
+
 
         <div class="img__discover">
             <figure>
@@ -114,24 +124,29 @@
         <div class="contact">
             <p>Contact Info: <br> Layton, Utah, 84041 <br> Phone: (801)-888-8888</p>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6016.256588533319!2d-111.96159965769363!3d41.0661882127756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697848367940!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
         <div id="bottomButton">
             <button aria-label="Join">JOIN</button>
         </div>
-        
+        <div class="map hide">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6016.256588533319!2d-111.96159965769363!3d41.0661882127756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697848367940!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
         <div>
             <img class="bottomLogo" src="images/logo-words.webp" alt="Commerce Logo">
         </div>
 
         <div class="info">
-        &copy; <span id="currentyear"></span>   |   Mike Stettler   |   WDD 230 Project  |   <!--Modified:--> <span id="lastModified"></span>
+            &copy; <span id="currentyear"></span> | Mike Stettler | WDD 230 Project | <!--Modified:--> <span
+                id="lastModified"></span>
         </div>
     </footer>
     <script src="scripts/dates.js"></script>
     <script src="scripts/events.js"></script>
-    
+
 
 </body>
+
 </html>

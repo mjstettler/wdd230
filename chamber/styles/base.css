@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 h1,h2,h3,h4,h5,h6 {
     font-family: "Merriweather", serif;
 }
@@ -13,25 +18,11 @@ li, a, button {
 
 button {
     background-color: #e5ebef;
-    padding: .7rem;
+    padding: 1rem;
 }
+
 button:hover {
     box-shadow: 0 12px 16px 0 #e5ebef4e, 0 17px 50px 0 #e5ebef4e;
-}
-
-header {
-    background-color: #122430;
-}
-
-/* .heroDiv img:nth-child(1) { */
-    /* max-width: 100%;   */
-    /* min-width: 560px; */
-    /* overflow: hidden; */
-/* } */
-
-.heroDiv img:nth-child(3) {
-    width: 100%;
-    height: auto;
 }
 
 .heroDiv {
@@ -39,23 +30,27 @@ header {
     text-align: center;
 }
 
+.heroImg {
+    width: 100%;
+}
+
 .topLogo {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 2%;
+    left: 5%;
+    width: 15vw;
+    display: none;
     /* background-color: #314a6ad7; */
-    max-width: 200px;
-    min-width: 110px;
-    width: 15%;
 }
 
 #menu {
     position: absolute;
-    top: 125px;
-    right: 5px;
+    top: 2px;
+    right: 2px;
     width: fit-content;
     transform: rotate(0deg);
     transition: 200ms;
+
 }
 
 .navbar li:hover .icon {
@@ -70,8 +65,8 @@ header {
 
 .darkToggle {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 2px;
+    left: 2px;
 }
 
 #darkButton {
@@ -81,34 +76,31 @@ header {
 ul {
     padding-left: 0;
 }
+
 .navbar li {
     display: none;
     float: none;
     justify-content: center;
-    padding: 5px;
-    background-color: #122430;
+    padding: 10px;
+    background-color: #122430d2;
     text-align: center;
-    
 }
 
 .navbar li a {
     display: block;
     color: #e5ebef;
-    padding: 10px;
+    padding: 10px 20px;
     text-decoration: none;
     text-align: center;
-    
-    
-    /* font-size: 1.5vw; */
-    
-
 }
+
 .navbar li:hover {
     color: #122430;
     background-color: #e5ebef;
     transition: all 0.3s ease-in 0s;
     
 }
+
 .navbar a:hover {
     color: #122430;
 }
@@ -124,21 +116,22 @@ h1 {
     /* background-color: #677b95a2; */
     justify-content: center;
     font-size: x-large;
-    padding: 1rem;
+    padding: 1rem 2.5rem;
+    width: 100%;
 }
 
 #topButton {
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 77%;
+    left: 20%;
     font-size: larger;
     background-color: #e5ebef;
     opacity: 80%;
     color: #122430;
     transform: translate(-50%, -50%);
+    padding: .8rem 1rem;
     display: none;
 }
-
 
 #topButton:hover {
     opacity: 100%;
@@ -147,12 +140,12 @@ h1 {
 main {
     margin: 0 auto;
     max-width: 1200px;
+    padding:  5px;
 }
 
 .section1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .section1 h2 {
@@ -168,7 +161,7 @@ main {
 .weather {
     display: block;
     border: 1px solid black;
-    grid-column: 1/6;
+    
 }
 
 .events {
@@ -185,11 +178,16 @@ main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding-bottom: 1rem;
+    margin-top: 30px;
 }
 
-#spotlight1, #spotlight2, #spotlight3, #spotlight4 {
+.spotlights .card {
     border: 1px solid black;
     margin-top: 10px;
+}
+
+.card {
+    box-shadow: 10px 5px 5px gray;
 }
 
 #spotlight1 {
@@ -222,6 +220,7 @@ footer {
     grid-template-rows: auto;
     text-align: center;
     color: #e5ebef;
+    gap: 20px;
     background-color: #122430;
 }
 
@@ -247,6 +246,8 @@ footer .map {
 
 .map iframe {
     max-width: 800px;
+    width: 100%;
+    object-fit: cover;
 
 }
 
@@ -282,14 +283,13 @@ footer .info {
 .main__discover {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
     padding-top: 20px;
 
 }
 
 .container__discover {
     border: 1px solid black;
-    border-radius: 20px;
     overflow: hidden;
     box-shadow: 10px 5px 5px gray;
     padding: 10px;
@@ -338,6 +338,11 @@ footer .info {
     box-shadow: 15px 15px 8px gray;
 }
 
+/* CSS join page */
+
+.hide {
+    display: none;
+}
 
 
 

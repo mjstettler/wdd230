@@ -14,16 +14,28 @@
         display: inline-flex;
     }
 
+    .card {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .spotlights .card {
+        padding: 10px;
+    }
+    .section1 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
     .navbar {
         margin-top: 0;
     }
 
     #topButton {
         display: block;
-        position: absolute;
-        top: 77%;
-        left: 20%;
-        padding: .8rem;
+    }
+
+    .topLogo {
+        display:block;
     }
 
     h1 {
@@ -38,5 +50,9 @@
         grid-column: 1/6;
         grid-row: 2/4;
 
+    }
+
+    .container__discover {
+        border-radius: 20px;
     }
 }
