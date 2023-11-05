@@ -1,3 +1,11 @@
+:root {
+    --requiredClr:red;
+    --primaryClr: #122430;
+    --secondaryClr: #314a6a;
+    --accent1: #e5ebef;
+    --accent2: #677b95;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -340,9 +348,121 @@ footer .info {
 
 /* CSS join page */
 
+.joinMain {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+form input {
+    display: block;
+    width: 100%;
+}
+form {
+    max-width: 500px;
+    
+}
+
+input[type="text"], input[type="submit"], input[type="email"], input[type="tel"], textarea, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: thin solid var(--accent2);
+}
 .hide {
     display: none;
 }
+
+fieldset {
+    border-radius: 5px;
+    border: 2px solid var(--secondaryClr);
+    background-color: var(--secondaryClr);
+    color: white;
+}
+
+form input[type="submit"] {
+    background-color: var(--primaryClr);
+    color: var(--accent1);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--accent2);
+    box-shadow: 5px 5px 10px var(--primaryClr);
+    color: black;
+}
+
+form label input:required {
+    border-left: red solid 6px;
+}
+
+form label input:focus, label.businessText textarea:focus {
+    background-color: var(--accent1);
+}
+
+form legend, form div {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+form label.top input {
+    
+    
+    margin: 10px;
+}
+form label.side{
+    display: block;
+    padding: .75rem 0;
+    font-size: large;
+}
+
+/* Tiers table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 5px;
+    font-size: .9rem;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid var(--accent2);
+    padding: 10px 5px;
+    text-align: center;
+}
+
+thead tr:nth-of-type(1), thead tr th:nth-of-type(1) {
+    background-color: var(--primaryClr);
+    color: whitesmoke;
+    font-size: larger;
+}
+
+thead tr th:nth-of-type(2) {
+    background-color: rgb(186, 157, 102);
+}
+
+thead tr th:nth-of-type(3) {
+    background-color: silver;
+}
+
+thead tr th:nth-of-type(4) {
+    background-color: gold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+tbody tr:nth-last-child(1) {
+    background-color: rgb(235, 150, 150);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
 
 
 

@@ -56,9 +56,9 @@
         </ul>
     </nav>
 
-    <main>
-        <form method="get" action="thankyou.html">
-            <fieldset>
+    <main class="joinMain">
+        <form class="joinForm" method="get" action="thankyou.html">
+            <fieldset class="parent">
                 <legend>Account Setup</legend>
                 <fieldset>
                     <legend class="heading">Personal Information</legend>
@@ -73,14 +73,19 @@
                 <fieldset>
                     <legend class="heading">Business Information</legend>
                     <label>Business/Organization* <input type="text" name="org" id="org" required></label>
-                    <div>Membership Tier</div>
+                    <br><br>
+                    <div>Select a Membership Tier</div>
                     <label class="side"><input type="radio" name="tier" value="NP">NP (Non-Profit)</label>
                     <label class="side"><input type="radio" name="tier" value="Bronze">Bronze</label>
                     <label class="side"><input type="radio" name="tier" value="Silver">Silver</label>
                     <label class="side"><input type="radio" name="tier" value="Gold">Gold</label>
-                    <label class="side">Description of Business <textarea name="description" id="description" cols="30"
-                            rows="10"></textarea></label>
+                    <br><br>
+                    <label class="side businessText">Describe your Business <br><textarea name="description"
+                            id="description" cols="30" rows="10"
+                            placeholder="Write about your business..."></textarea></label>
+                    <br><br>
                     <label><input type="hidden" name="timeStamp" id="timeStamp"></label>
+                    <br>
                 </fieldset>
                 <input type="submit" name="joinBtn" id="joinBtn" value="Join the Community">
             </fieldset>
@@ -185,6 +190,13 @@
                     <td>✖</td>
                     <td>✔️</td>
                     <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Monthly Cost</th>
+                    <td>$50.00</td>
+                    <td>$100.00</td>
+                    <td>$300.00</td>
+                    <td>Free*</td>
                 </tr>
             </tbody>
         </table>

@@ -55,4 +55,9 @@
     .container__discover {
         border-radius: 20px;
     }
+    /* Css Join page */
+    .joinMain {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
