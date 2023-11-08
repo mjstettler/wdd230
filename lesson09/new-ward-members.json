@@ -1,0 +1,93 @@
+{
+    "wardName" : "Paradise 7th Ward",
+    "families" : [
+        {
+            "familyName" : "Robinson",
+            "moveDate" : "Oct 7, 2023, 01:00:00 AM",
+            "numOfRecords" : 6,
+            "visited" : true,
+            "members" : [
+                {
+                    "William" : [
+                        {
+                            "gender" : "Male",
+                            "birthDate" : "Dec 5, 1983"
+                        }
+                    ],
+                    "Elizabeth" : [
+                        {
+                            "gender" : "Female",
+                            "birthDate" : "Apr 24, 1984" 
+                        }
+                    ],
+                    "Fritz" : [
+                        {
+                            "gender" : "Male",
+                            "birthDate" : "Jan 1, 2008"
+                        }
+                    ],
+                    "Ernest" : [
+                        {
+                            "gender" : "Male",
+                            "birthDate" : "Nov 10, 2009"
+                        }
+                    ],
+                    "Jack" : [
+                        {
+                            "gender" : "Male",
+                            "birthDate" : "Sep 30, 2010"
+                        }
+                    ],
+                    "Franz" : [
+                        {
+                            "gender" : "Male",
+                            "birthDate" : "Apr 3, 2012"
+                        }
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "familyName" : "Pevensie",
+            "moveDate" : "Nov 7, 2023",
+            "numOfRecords" : 5,
+            "visited" : false,
+            "members" : [
+                {
+                    "Helen" : [
+                        {
+                            "gender" : "Female",
+                            "birthDate" : "Jun 13, 1970"
+                        }
+                    ],
+                    "Peter" : [
+                        {
+                            "gender" : "Male",
+                            "birthDate" : "Jan 6, 2004"
+                        }
+                    ],
+                    "Susan" : [
+                        {
+                            "gender" : "Female",
+                            "birthDate" : "Mar 27, 2007"
+                        }
+                    ],
+                    "Edmund" : [
+                        {
+                            "gender" : "Male",
+                            "birthDate" : "Oct 15, 2009"
+                        }
+                    ],
+                    "Lucy" : [
+                        {
+                            "gender" : "Female",
+                            "birthDate" : "May 7, 2012"
+                        }
+                    ]
+                }
+            ]
+        }
+        
+    ]
+}
