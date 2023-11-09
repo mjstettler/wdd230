@@ -13,8 +13,13 @@ const displayLinks = (weeks) => {
     weeks.foreach(week => {
         let li = document.createElement('li');
         let link = document.createElement('a');
+        li.textContent = week;
         link.textContent = week.title;
         link.setAttribute('href', week.url)
+
+        
+        li.appendChild(link);
+        links.appendChild(li);
 
     })
 }
