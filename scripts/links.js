@@ -4,9 +4,9 @@ const links = document.querySelector('#links');
 async function getLinks() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
+    console.log(data.lessons);
 
-    displayLinks(data)
+    displayLinks(data.lessons)
 }
 
 const displayLinks = (weeks) => {
@@ -14,10 +14,10 @@ const displayLinks = (weeks) => {
         let li = document.createElement('li');
         let link = document.createElement('a');
         li.textContent = week;
-        link.textContent = week.title;
-        link.setAttribute('href', week.url)
+        link.textContent = week.links.title;
+        link.setAttribute('href', week.links.url)
 
-        
+
         li.appendChild(link);
         links.appendChild(li);
 
