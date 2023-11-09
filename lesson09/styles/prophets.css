@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    background-color:;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+section {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 5px 15px 8px gray;
+    background-color:;
+}
+
+h2 {
+    background-color: aqua;
+    font-size: 28px;
+}
+
+p {
+    background-color: rebeccapurple;
+    font-weight: 300;
+    font-size: 18px;
+}
