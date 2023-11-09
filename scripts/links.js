@@ -12,6 +12,9 @@ async function getLinks() {
 const displayLinks = (weeks) => {
     weeks.forEach(week => {
         let li = document.createElement('li');
+        week.lesson.links.forEach(link => {
+            console.log(link.title)
+        });
         let link = document.createElement('a');
         li.textContent = week.lesson;
         link.textContent = week.lesson.links.title;
