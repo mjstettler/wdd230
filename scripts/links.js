@@ -1,4 +1,4 @@
-const url = "https://mjstettler.github.io/wdd230/scripts/links.json";
+const url = "https://mjstettler.github.io/wdd230/data/links.json";
 const links = document.querySelector('#links');
 
 async function getLinks() {
