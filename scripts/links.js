@@ -4,9 +4,9 @@ const links = document.querySelector('#links');
 async function getLinks() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.lessons);
+    console.log(data.lessons.lesson);
 
-    displayLinks(data.lessons)
+    displayLinks(data.lessons.lesson)
 }
 
 const displayLinks = (weeks) => {
