@@ -4,18 +4,18 @@ const links = document.querySelector('#links');
 async function getLinks() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.lessons.lesson);
+    console.log(data.lessons);
 
-    displayLinks(data.lessons.lesson)
+    displayLinks(data.lessons)
 }
 
 const displayLinks = (weeks) => {
     weeks.forEach(week => {
         let li = document.createElement('li');
         let link = document.createElement('a');
-        li.textContent = week;
-        link.textContent = week.links.title;
-        link.setAttribute('href', week.links.url)
+        li.textContent = week.lesson;
+        link.textContent = week.lesson.links.title;
+        link.setAttribute('href', week.lesson.links.url)
 
 
         li.appendChild(link);
