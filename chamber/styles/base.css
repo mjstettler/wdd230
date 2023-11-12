@@ -462,6 +462,14 @@ tbody tr:nth-last-child(1) {
     font-weight: 500;
 }
 
+/* Directory page */
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+}
+
 
 
 
