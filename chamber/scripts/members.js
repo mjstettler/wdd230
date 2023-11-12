@@ -40,6 +40,7 @@ function displayMembers(members) {
         cardElement.appendChild(phoneNum);
         cardElement.appendChild(opHours);
         cardElement.appendChild(website);
+        cardElement.appendChild(level)
 
         cards.appendChild(cardElement);
     });
