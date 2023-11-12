@@ -503,6 +503,8 @@ tbody tr:nth-last-child(1) {
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
     margin: 0;
     padding: .25rem;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
 }
 
 .list .directoryCard:nth-child(even) {
@@ -513,12 +515,11 @@ tbody tr:nth-last-child(1) {
     display: none;
 }
 .list .card {
-    border-radius: none;
+    border-radius: 0;
     box-shadow: none;
 }
 .directoryMain {
     text-align: center;
-    background-color: #677b95;
 }
 
 .display {
