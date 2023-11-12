@@ -504,10 +504,17 @@ tbody tr:nth-last-child(1) {
     padding: .25rem;
 }
 
+.list .directoryCard:nth-child(even) {
+    background-color: #ccc;
+}
+
 .list .directoryCard img {
     display: none;
 }
-
+.list .card {
+    border-radius: none;
+    box-shadow: none;
+}
 .directoryMain {
     text-align: center;
     background-color: #677b95;
