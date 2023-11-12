@@ -2,6 +2,9 @@ const hamButton = document.querySelector('#menu')
 const navigation = document.querySelector('.navbar')
 const darkButton = document.querySelector('#darkButton')
 const darkMode = document.querySelector("#darkButton")
+const listBtn = document.querySelector('#list')
+const gridBtn = document.querySelector('#grid')
+const cards = document.querySelector('.directoryCard')
 
 // Variables for changing border color 
 const box1 = document.querySelector('.weather');
@@ -37,4 +40,15 @@ darkMode.addEventListener('click', () => {
         document.body.style.color = "black";
     }
     console.log(darkButton.textContent)
-})
+});
+
+gridBtn.addEventListener('click', () => {
+    cards.classList.add("grid");
+    cards.classList.remove("list");
+});
+
+listBtn.addEventListener('click', () => {
+    cards.classList.add('list');
+    cards.classList.remove('grid');
+
+});
