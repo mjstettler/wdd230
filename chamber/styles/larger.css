@@ -122,13 +122,6 @@
     }
 
     /* Directory page css */
-    #directoryCards {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        text-align: center;
-        justify-items: center;
-    }
 
     
     
