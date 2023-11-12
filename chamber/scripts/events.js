@@ -4,7 +4,7 @@ const darkButton = document.querySelector('#darkButton')
 const darkMode = document.querySelector("#darkButton")
 const listBtn = document.querySelector('#list')
 const gridBtn = document.querySelector('#grid')
-const cards = document.querySelector('.directoryCard')
+const cards = document.querySelector('#directoryCards')
 
 // Variables for changing border color 
 const box1 = document.querySelector('.weather');
