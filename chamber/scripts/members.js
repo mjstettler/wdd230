@@ -40,8 +40,9 @@ function displayMembers(members) {
         cardElement.appendChild(phoneNum);
         cardElement.appendChild(opHours);
         cardElement.appendChild(website);
-        cardElement.appendChild(level)
-
+        cardElement.appendChild(level);
+        
+        //cardElement.append(phoneNum, opHours, website, level);
         cards.appendChild(cardElement);
     });
 }
