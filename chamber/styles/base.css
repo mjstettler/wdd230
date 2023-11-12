@@ -493,7 +493,7 @@ tbody tr:nth-last-child(1) {
 
 .list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
