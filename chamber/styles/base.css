@@ -476,7 +476,7 @@ tbody tr:nth-last-child(1) {
 }
 
 .grid .directoryCard img {
-    display: block;
+    display: inline;
     margin-bottom: 20px;
     object-fit: cover;
     margin-top: 20px;
@@ -502,7 +502,7 @@ tbody tr:nth-last-child(1) {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
     margin: 0;
-    padding: .25rem;
+    padding: .5rem;
     border-top: thin solid black;
     border-bottom: thin solid black;
 }
