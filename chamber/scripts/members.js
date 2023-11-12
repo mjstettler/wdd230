@@ -26,16 +26,19 @@ function displayMembers(members) {
         level.textContent = member.memberLevel;
         opHours.textContent = member.hours;
 
-        cardElement.appendChild(logo, name)
+        cardElement.appendChild(logo);
+        cardElement.appendChild(name);
 
         member.address.forEach((building) => {
             let locationElement = document.createElement('p');
             locationElement.textContent = building.location;
 
-            cardElement.appendChild(locationElement)
+            cardElement.appendChild(locationElement);
         });
 
-        cardElement.appendChild(phoneNum, opHours, website)
+        cardElement.appendChild(phoneNum);
+        cardElement.appendChild(opHours);
+        cardElement.appendChild(website);
 
         cards.appendChild(cardElement);
     });
