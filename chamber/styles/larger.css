@@ -130,7 +130,7 @@
     }
 
     .directoryCard {
-        border: 1px solid black;
+        border: thin solid black;
         height: 340px;
         padding: 5px;
     }
