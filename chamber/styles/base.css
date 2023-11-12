@@ -493,14 +493,13 @@ tbody tr:nth-last-child(1) {
 
 .list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+
 }
 
 .list .directoryCard {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 2fr 1fr;
-    justify-content: space-evenly;
+    grid-template-columns: 1fr;
     margin: 0;
     padding: .5rem;
     border-top: thin solid black;
