@@ -472,35 +472,40 @@ tbody tr:nth-last-child(1) {
 
 .grid .directoryCard {
     border: thin solid black;
-    min-height: 340px;
     padding: 5px;
 }
 
-.directoryCard {
-    border: thin solid black;
-    min-height: 340px;
-    padding: 5px;
-}
-
-.directoryCard img {
+.grid .directoryCard img {
+    display: block;
     margin-bottom: 20px;
     object-fit: cover;
     margin-top: 20px;
 }
 
-.directoryCard p:first-of-type {
+.grid .directoryCard p:first-of-type {
     font-size: 25px;
     font-weight: 500;
     padding-bottom: 10px;
     padding-top: 10px;
 }
-.directoryCard p {
+.grid .directoryCard p {
     text-wrap: balance;
 }
 
 .list {
     display: flex;
     flex-direction: column;
+}
+
+.list .directoryCard {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: .25rem;
+}
+
+.list .directoryCard img {
+    display: none;
 }
 
 .directoryMain {

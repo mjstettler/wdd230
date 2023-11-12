@@ -60,4 +60,10 @@
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    /* Directory page */
+    .grid .directoryCard {
+        min-height: 340px;
+    }
+    
 }
