@@ -144,7 +144,7 @@
         padding: 5px 0 0 5px;
     }
 
-    .directoryCard p::first-line {
+    .directoryCard p:nth-child(0) {
         font-size: 25px;
         font-weight: 500;
     }
