@@ -134,4 +134,9 @@
         height: 340px;
         padding: 5px;
     }
+
+    .directoryCard img {
+        padding-bottom: 10px;
+        display: none;
+    }
 }
