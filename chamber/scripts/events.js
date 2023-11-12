@@ -4,7 +4,7 @@ const darkButton = document.querySelector('#darkButton')
 const darkMode = document.querySelector("#darkButton")
 const listBtn = document.querySelector('#list')
 const gridBtn = document.querySelector('#grid')
-const cards = document.querySelector('#directoryCards')
+const businessCards = document.querySelector('#directoryCards')
 
 // Variables for changing border color 
 const box1 = document.querySelector('.weather');
@@ -43,12 +43,12 @@ darkMode.addEventListener('click', () => {
 });
 
 gridBtn.addEventListener('click', () => {
-    cards.classList.add("grid");
-    cards.classList.remove("list");
+    businessCards.classList.add("grid");
+    businessCards.classList.remove("list");
 });
 
 listBtn.addEventListener('click', () => {
-    cards.classList.add('list');
-    cards.classList.remove('grid');
+    businessCards.classList.add('list');
+    businessCards.classList.remove('grid');
 
 });
