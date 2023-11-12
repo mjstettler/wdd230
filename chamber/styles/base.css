@@ -470,6 +470,36 @@ tbody tr:nth-last-child(1) {
     text-align: center;
 }
 
+.grid .directoryCard {
+    border: thin solid black;
+    min-height: 340px;
+    padding: 5px;
+}
+
+.directoryCard {
+    border: thin solid black;
+    min-height: 340px;
+    padding: 5px;
+}
+
+.directoryCard img {
+    margin-bottom: 20px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.directoryCard p:first-of-type {
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
 .directoryMain {
     text-align: center;
 }
