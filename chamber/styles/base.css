@@ -494,6 +494,9 @@ tbody tr:nth-last-child(1) {
     padding-bottom: 10px;
     padding-top: 10px;
 }
+.directoryCard p {
+    text-wrap: balance;
+}
 
 .list {
     display: flex;
