@@ -137,6 +137,11 @@
 
     .directoryCard img {
         padding-bottom: 10px;
-        display: none;
+        object-fit: cover;
+    }
+
+    .directoryCard p:first-of-type {
+        font-size: 18px;
+        font-weight: 500;
     }
 }
