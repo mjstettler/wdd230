@@ -33,7 +33,7 @@ function displayMembers(members) {
             cardElement.appendChild(locationElement)
         });
 
-        cardElement.appendChild(phone, opHours, website)
+        cardElement.appendChild(phoneNum, opHours, website)
 
         cards.appendChild(cardElement);
     });
