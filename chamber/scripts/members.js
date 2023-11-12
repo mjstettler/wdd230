@@ -4,12 +4,14 @@ const url = "https://mjstettler.github.io/wdd230/chamber/data/members.json";
 function displayMembers(members) {
     members.forEach((member) => {
         let cardElement = document.createElement('div');
-        let name = document.createElement('h2');
+        let name = document.createElement('p');
         let phoneNum = document.createElement('p');
         let website = document.createElement('a');
         let logo = document.createElement('img');
         let level = document.createElement('p');
         let opHours = document.createElement('p');
+
+        console.log(member.business);
 
         cardElement.setAttribute('class', 'card')
         name.textContent = member.business;
