@@ -43,7 +43,7 @@ function displayMembers(members) {
 async function getMembers() {
     try {
         const response = await fetch(url);
-        const data = await response.json;
+        const data = await response.json();
 
         console.log('member data fetch success!')
 
