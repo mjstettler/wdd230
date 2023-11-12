@@ -1,0 +1,114 @@
+{
+    "commerceMembers": [
+        {
+            "business": "America First Credit Union",
+            "address": [
+                {
+                    "location": "425 Heritage Park Blvd, Layton, Ut 84041"
+                },
+                {
+                    "location": "1356 UT-193, Layton, Ut 84040"
+                },
+                {
+                    "location": "172 N Fort Ln,  Layton, Ut 84041"
+                }
+            ],
+            "phone": "(800) 999-3961",
+            "url": "https://www.americafirst.com/",
+            "image": "images/americaFirst.png",
+            "memberLevel": "Silver",
+            "hours": "M-F: 9AM-6PM, Sat 9AM-3PM"
+        },
+        {
+            "business": "Rosewood Painting and Remodel",
+            "address": [
+                {
+                    "location": "893 Marshall Way N, Layton, UT 84041"
+                }
+            ],
+            "phone": "(385) 348-5022",
+            "url": "https://www.rosewoodpainting.com/",
+            "image": "images/rosewood.png",
+            "memberLevel": "Gold",
+            "hours": "M-F: 8AM-5PM"
+        },
+        {
+            "business": "WinCo Foods",
+            "address": [
+                {
+                    "location": "Fort Lane Shopping Center, 200 S Fort Ln, Layton, UT 84041"
+                }
+            ],
+            "phone": "(801) 853-8063",
+            "url": "https://www.wincofoods.com/",
+            "image": "images/winco.png",
+            "memberLevel": "Silver",
+            "hours": "Open 24hrs"
+        },
+        {
+            "business": "Louie's Pizzeria",
+            "address": [
+                {
+                    "location": "1095 N Main St, Layton, UT 84041"
+                }
+            ],
+            "phone": "(801) 784-8781",
+            "url": "https://www.ilovelouies.com/",
+            "image": "images/louies.webp",
+            "memberLevel": "Bronze",
+            "hours": "T-Sat: 11AM-9PM"
+        },
+        {
+            "business": "The Home Depot",
+            "address": [
+                {
+                    "location": "449 N Main Street, Layton, UT 84041"
+                }
+            ],
+            "phone": "(801) 543-2296",
+            "url": "https://www.homedepot.com/",
+            "image": "images/homedepot.png",
+            "memberLevel": "Silver",
+            "hours": "6AM-10PM"
+        },
+        {
+            "business": "Minus World Video Games",
+            "address": [
+                {
+                    "location": "58 W. Gentile St. in Layton, UT 84041"
+                }
+            ],
+            "phone": "(801) 882-9847",
+            "url": "https://minus-world.com/",
+            "image": "images/minus.webp",
+            "memberLevel": "Bronze",
+            "hours": "M-F: 12PM-8PM, SAT 10AM-8PM"
+        },
+        {
+            "business": "Surf'n Swim",
+            "address": [
+                {
+                    "location": "465 N Wasatch Dr, Layton, UT 84041"
+                }
+            ],
+            "phone": "(801) 336-3939",
+            "url": "https://www.laytoncity.org/lc/surfnswim/index",
+            "image": "images/surflogo.png",
+            "memberLevel": "Bronze",
+            "hours": "5AM-8:45PM"
+        },
+        {
+            "business": "PetSmart",
+            "address": [
+                {
+                    "location": "750 N. Main St., Layton, UT 84041"
+                }
+            ],
+            "phone": "(801) 336-5265",
+            "url": "https://www.petsmart.com/",
+            "image": "images/petsmart.webp",
+            "memberLevel": "Silver",
+            "hours": "9AM-9PM"
+        }
+    ]
+}
