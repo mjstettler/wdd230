@@ -45,6 +45,8 @@ async function getMembers() {
         const response = await fetch(url);
         const data = await response.json;
 
+        console.log('member data fetch success!')
+
         displayMembers(data.commerceMembers)
     } catch (error) {
         console.error('Error fetching or parsing data:', error);
