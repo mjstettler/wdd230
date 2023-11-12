@@ -120,4 +120,14 @@
         box-shadow: 10px 5px 10px gray;
         filter: blur(0);
     }
+
+    /* Directory page css */
+    #directoryCards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .directoryCard {
+        border: 1px solid black;
+    }
 }
