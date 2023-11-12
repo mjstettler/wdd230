@@ -18,6 +18,7 @@ function displayMembers(members) {
         phoneNum.textContent = member.phone;
         website.textContent = member.url;
         website.setAttribute('href', member.url);
+        website.setAttribute('target', '_blank')
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `${member.business} logo`);
         logo.setAttribute('loading', 'lazy');
