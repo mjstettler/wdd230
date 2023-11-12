@@ -143,8 +143,8 @@
         background-color: navy;
     }
 
-    .directoryCard p:first-of-type {
-        font-size: 18px;
+    .directoryCard p::first-line {
+        font-size: 25px;
         font-weight: 500;
     }
 }
