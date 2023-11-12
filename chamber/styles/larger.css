@@ -131,7 +131,7 @@
 
     .directoryCard {
         border: thin solid black;
-        height: 340px;
+        min-height: 340px;
         padding: 5px;
     }
 
