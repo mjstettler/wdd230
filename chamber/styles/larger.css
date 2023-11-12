@@ -143,5 +143,6 @@
     .directoryCard p:first-of-type {
         font-size: 25px;
         font-weight: 500;
+        padding-bottom: 5px;
     }
 }
