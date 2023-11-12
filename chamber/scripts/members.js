@@ -13,7 +13,7 @@ function displayMembers(members) {
 
         console.log(member.business);
 
-        cardElement.setAttribute('class', 'card directoryCard grid')
+        cardElement.setAttribute('class', 'card directoryCard')
         name.textContent = member.business;
         phoneNum.textContent = member.phone;
         website.textContent = member.url;
