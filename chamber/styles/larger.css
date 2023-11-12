@@ -139,8 +139,9 @@
         padding-bottom: 10px;
         object-fit: cover;
     }
-    .directoryCard img:first-of-type {
+    .directoryCard img:first {
         background-color: navy;
+        padding: 5px 0 0 5px;
     }
 
     .directoryCard p::first-line {
