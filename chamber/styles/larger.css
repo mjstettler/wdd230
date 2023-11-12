@@ -136,15 +136,15 @@
     }
 
     .directoryCard img {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         object-fit: cover;
     }
-    .directoryCard img:first {
+    .directoryCard:first-of-type img {
         background-color: navy;
         padding: 5px 0 0 5px;
     }
 
-    .directoryCard p:nth-child(0) {
+    .directoryCard p:nth-child(1) {
         font-size: 25px;
         font-weight: 500;
     }
