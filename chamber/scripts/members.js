@@ -37,12 +37,12 @@ function displayMembers(members) {
             cardElement.appendChild(locationElement);
         });
 
-        cardElement.appendChild(phoneNum);
-        cardElement.appendChild(opHours);
-        cardElement.appendChild(website);
-        cardElement.appendChild(level);
-        
-        //cardElement.append(phoneNum, opHours, website, level);
+        // cardElement.appendChild(phoneNum);
+        // cardElement.appendChild(opHours);
+        // cardElement.appendChild(website);
+        // cardElement.appendChild(level);
+
+        cardElement.append(phoneNum, opHours, website, level);
         cards.appendChild(cardElement);
     });
 }
