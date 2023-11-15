@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 #profile {
     grid-column: 2/3;
@@ -50,8 +54,8 @@ nav a:hover {
 
 .hero img {
     width: 100%;
-    height: auto;
-
+    max-height: 300px;
+    object-fit:cover;
 }
 
 .hero {
@@ -86,6 +90,8 @@ main {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     padding: 1rem;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 main h2, h3 {
@@ -97,11 +103,12 @@ h3 {
     color: whitesmoke;
     font-variant: small-caps;
     padding: 1rem;
-    margin-top: auto;
-    border: 1px solid black;
-    border-radius: 1rem;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    margin: 0;
+    
+    /* border: 1px solid black; */
+    /* border-radius: 1rem; */
+    /* border-bottom-right-radius: 0; */
+    /* border-bottom-left-radius: 0; */
 }
 
 footer {
@@ -119,11 +126,15 @@ footer {
     min-width: 219px;
     font-size: 1rem;
     margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 4px 5px 8px gray;
 }
 
-.card2 div {
-    padding: 1rem;
+.card1 ul, .card2 div {
+    padding: 10px;
+    
 }
+
 
 .card1 li, .card2 li {
     list-style-type: none;
@@ -141,15 +152,9 @@ footer {
 .card2 {
     grid-row: 4;
     font-size: large;
+    text-align: center;
 }
-.card2 div {
-    display: grid;
-}
-.card2 p {
-    display: flex;
-    justify-content: center;
-    flex: 1 1 100%;
-}
+
 main h2 {
     grid-row: 2;
 }
@@ -160,6 +165,7 @@ main h2 {
     border-radius: .5rem;
     text-align: center;
     overflow: hidden;
+    box-shadow: 4px 5px 8px gray;
     
 }
 .map iframe {
@@ -174,6 +180,7 @@ main h2 {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    padding: 10px;
 }
 #menu::before {
     content: '☰';

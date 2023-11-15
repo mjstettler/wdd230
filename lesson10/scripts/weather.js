@@ -16,7 +16,9 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute('src', iconsrc)
     weatherIcon.setAttribute('alt', `${data.weather[0].description} icon`)
-    captionDesc.textContent = data.weather[0].description;
+
+    const description = data.weather[0].description.toString();
+    captionDesc.textContent = titleCase(description);
 
     let windDirection = getDirection(data.wind.deg); //convert degrees into cardinal directions
     windDir.textContent = windDirection;
@@ -61,6 +63,10 @@ function getDirection(deg) { // Convert directional degrees to cardinal directio
     } else if (deg >= 293 && deg <= 337) {
         return 'NW';
     }
+}
+
+function titleCase(msg) {
+    return msg.split(' ').map(word => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase()).join(' ');
 }
 
 apiFetch();

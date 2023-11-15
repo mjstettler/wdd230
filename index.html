@@ -61,7 +61,15 @@
             <h3>Information</h3>
             <div>
                 <p>Layton, Utah</p>
-                <p><span id="weather">Current Weather: 66°, Sunny 🌞</span></p>
+                <div class="weather">
+                    <p><span id="weatherDay"></span></p>
+                    <figure>
+                        <img src="" alt="" id="weather-icon">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p><span id="currentWeather"></span></p>
+                </div>
+
                 <p>Page Visits:<span class="visits"></span></p>
             </div>
         </section>
@@ -84,6 +92,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
