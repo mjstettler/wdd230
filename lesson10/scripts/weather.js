@@ -14,8 +14,8 @@ function displayResults(data) {
     tempNum = (data.main.temp).toFixed();
     currentTemp.innerHTML = `${tempNum} &deg;F`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    weatherIcon.setAttribute('src', iconsrc)
-    weatherIcon.setAttribute('alt', `${data.weather[0].description} icon`)
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', `${data.weather[0].description} icon`);
 
     const description = data.weather[0].description.toString();
     captionDesc.textContent = titleCase(description);

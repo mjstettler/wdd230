@@ -104,11 +104,6 @@ h3 {
     font-variant: small-caps;
     padding: 1rem;
     margin: 0;
-    
-    /* border: 1px solid black; */
-    /* border-radius: 1rem; */
-    /* border-bottom-right-radius: 0; */
-    /* border-bottom-left-radius: 0; */
 }
 
 footer {
@@ -132,10 +127,11 @@ footer {
 
 .card1 ul, .card2 div {
     padding: 10px;
-    
 }
 
-
+.card2 figure img {
+    background-color: white;
+}
 .card1 li, .card2 li {
     list-style-type: none;
 
