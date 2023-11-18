@@ -61,18 +61,12 @@
         <div class="section1">
             <section class="weather card">
                 <h2>Weather</h2>
-                <div>
-                    <p>Temperature: <span id="temp">49</span>&deg;F</p>
-                    <p>Wind Speed: <span id="wind">25</span> mph</p>
-                    <p>Wind Chill: <span id="chill"></span></p>
-                </div>
+                <div class="weatherTiles"></div>
             </section>
 
             <section class="events card">
                 <h2>Events</h2>
-                <div>
-                    <p>Calendar of events</p>
-                </div>
+                
             </section>
         </div>
 
@@ -86,11 +80,23 @@
             </div>
             <div class="card" id="spotlight3">
                 <h3>Dibble Farms</h3>
+                <img src="images/dibble.webp" alt="dibble farm logo" width="100%">
             </div>
             <div class="card" id="spotlight4">
                 <h3>FiiZ</h3>
             </div>
         </section>
+
+        <div class="banner">
+            <div>
+                Join us for an evening of networking and collaboration at the Chamber of Commerce Meet and Greet this
+                Wednesday at 7:00 p.m. Connect with fellow professionals, exchange ideas, and explore exciting
+                opportunities. Your presence is key to fostering a thriving business community. See you there!
+            </div>
+            <div>
+                <button id="close">❌</button>
+            </div>
+        </div>
 
     </main>
 
@@ -120,6 +126,9 @@
     <script src="scripts/dates.js"></script>
     <script src="scripts/events.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    
 
 </body>
 

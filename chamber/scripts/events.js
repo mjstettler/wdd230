@@ -16,8 +16,6 @@ const box6 = document.querySelector('#spotlight4');
 
 const boxes = [box1, box2, box3, box4, box5, box6];
 
-console.log(darkButton.textContent)
-
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');

@@ -8,7 +8,6 @@ const lastVisit = localStorage.getItem('visit');
 const timeBetween = today-lastVisit;
 
 
-
 function daysAgo(msInDay, timeBetween) {
     if (Math.floor((timeBetween*2)/msInDay) < 1) {
         return 0;
@@ -31,4 +30,6 @@ if (lastVisit == 0) {
         document.querySelector('#date').textContent = 'You last visited ' + daysAgo(msInDay, timeBetween) + ' days ago.';
     }
 };
+
+
 
