@@ -22,7 +22,7 @@ function displayMembers(members) {
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `${member.business} logo`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '300');
+        logo.setAttribute('width', '200');
         logo.setAttribute('height', 'auto');
         level.textContent = member.memberLevel;
         opHours.textContent = member.hours;

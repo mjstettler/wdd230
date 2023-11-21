@@ -71,7 +71,7 @@ button:hover {
 }
 
 .darkToggle {
-    position: absolute;
+    position: fixed;
     top: 2px;
     left: 2px;
 }
@@ -510,11 +510,11 @@ tbody tr:nth-last-child(1) {
     border-bottom: thin solid black;
 }
 
-.list .directoryCard:nth-child(even) {
+.list .card:nth-child(even) {
     background-color: #ccc;
 }
 
-.list .directoryCard img {
+.list .card img {
     display: none;
 }
 .list .card {
@@ -543,8 +543,9 @@ div.banner {
     background-color: var(--accent2);
     color: var(--accent1);
     animation: slide 1s ease ;
-    animation-delay: 1s;
-    
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    border: 1px solid black;
 }
 
 @keyframes slide {
@@ -554,9 +555,16 @@ div.banner {
 }
 
 div.banner div:nth-of-type(1){
-    flex: 1 1 100%;
+    flex:1 1 100%;
     font-size: 1em;
     margin: 15px;
+    
+}
+div.banner p {
+    padding: .6rem;
+    margin: 0 auto;
+    max-width: 90%; 
+
 }
 div.banner button {
     border: 0;
