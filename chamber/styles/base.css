@@ -479,13 +479,13 @@ tbody tr:nth-last-child(1) {
 .grid .directoryCard {
     border: thin solid black;
     padding: 5px;
+    display: grid;
 }
 
 .grid .directoryCard img {
     display: inline;
     margin-bottom: 20px;
-    object-fit: cover;
-    margin-top: 20px;
+    margin: 0 auto;
 }
 
 .grid .directoryCard p:first-of-type {
@@ -514,7 +514,10 @@ tbody tr:nth-last-child(1) {
     background-color: #ccc;
 }
 
-.list .card img {
+/* .list .card img {
+    display: none; */
+
+.list .card .hide {
     display: none;
 }
 .list .card {

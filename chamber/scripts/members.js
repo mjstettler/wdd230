@@ -10,8 +10,9 @@ function displayMembers(members) {
         let logo = document.createElement('img');
         let level = document.createElement('p');
         let opHours = document.createElement('p');
+        
 
-        console.log(member.business);
+        
 
         cardElement.setAttribute('class', 'card directoryCard')
         name.textContent = member.business;
@@ -21,11 +22,17 @@ function displayMembers(members) {
         website.setAttribute('target', '_blank')
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `${member.business} logo`);
+        logo.setAttribute('class', 'hide')
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '200');
         logo.setAttribute('height', 'auto');
         level.textContent = member.memberLevel;
+        level.setAttribute('class', 'hide')
         opHours.textContent = member.hours;
+        // opHours.setAttribute('class', 'hide')
+        // 
+        
+        
 
         cardElement.appendChild(logo);
         cardElement.appendChild(name);
@@ -33,14 +40,11 @@ function displayMembers(members) {
         member.address.forEach((building) => {
             let locationElement = document.createElement('p');
             locationElement.textContent = building.location;
+            locationElement.setAttribute('class', 'hide')
 
             cardElement.appendChild(locationElement);
         });
 
-        // cardElement.appendChild(phoneNum);
-        // cardElement.appendChild(opHours);
-        // cardElement.appendChild(website);
-        // cardElement.appendChild(level);
 
         cardElement.append(phoneNum, opHours, website, level);
         cards.appendChild(cardElement);
@@ -52,8 +56,6 @@ async function getMembers() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-
-        console.log('member data fetch success!')
 
         displayMembers(data.commerceMembers)
     } catch (error) {
