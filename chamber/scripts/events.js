@@ -14,7 +14,7 @@ const box4 = document.querySelector('#spotlight2');
 const box5 = document.querySelector('#spotlight3');
 const box6 = document.querySelector('#spotlight4');
 
-const boxes = [box1, box2, box3, box4, box5, box6];
+const boxes = document.querySelectorAll('.card')
 
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
@@ -36,8 +36,12 @@ darkMode.addEventListener('click', () => {
         darkButton.textContent = '🔆';
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
+
+        boxes.forEach((box) => {
+            box.style.borderColor = "black";
+        });
     }
-    console.log(darkButton.textContent)
+    
 });
 
 gridBtn.addEventListener('click', () => {
