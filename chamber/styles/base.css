@@ -79,17 +79,13 @@ button:hover {
 #darkButton {
     font-size: larger;
 }
-
-ul {
-    padding-left: 0;
+nav {
+    background-color: var(--primaryClr);
 }
 
 .navbar li {
     display: none;
-    float: none;
-    justify-content: center;
     padding: 10px;
-    background-color: #122430d2;
     text-align: center;
 }
 

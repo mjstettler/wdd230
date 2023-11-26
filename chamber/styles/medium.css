@@ -5,13 +5,13 @@
     
     .navbar li {
         display: block;
-        padding: 1px;
-        float: left;
-        
+        flex: 1 1 auto;
     }
     
-    nav {
-        display: inline-flex;
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .card {
@@ -44,9 +44,6 @@
         grid-template-rows: 1fr 1fr 1fr;
     }
 
-    .navbar {
-        margin-top: 0;
-    }
 
     #topButton {
         display: block;
