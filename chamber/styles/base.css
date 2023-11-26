@@ -273,13 +273,12 @@ footer .map {
     grid-column: 1/8;
     grid-row: 4;
 }
-
-.map iframe {
-    max-width: 800px;
-    width: 100%;
-    object-fit: cover;
-
+.map a {
+    color: var(--accent1);
+    font-size: 1rem;
+    text-decoration: none;
 }
+
 
 footer .info {
     grid-column: 1/8;
