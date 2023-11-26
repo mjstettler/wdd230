@@ -42,7 +42,9 @@
         margin-top: 0;
         margin-left: 5px;
     }
-
+    .spotlights {
+        grid-template-columns: repeat(6, 1fr);
+    }
     #spotlight1 {
         grid-column: 1/3;
         grid-row: 2;

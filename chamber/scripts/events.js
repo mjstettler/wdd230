@@ -2,8 +2,6 @@ const hamButton = document.querySelector('#menu')
 const navigation = document.querySelector('.navbar')
 const darkButton = document.querySelector('#darkButton')
 const darkMode = document.querySelector("#darkButton")
-const listBtn = document.querySelector('#list')
-const gridBtn = document.querySelector('#grid')
 const businessCards = document.querySelector('#directoryCards')
 
 // Variables for changing border color 
@@ -44,13 +42,3 @@ darkMode.addEventListener('click', () => {
     
 });
 
-gridBtn.addEventListener('click', () => {
-    businessCards.classList.add("grid");
-    businessCards.classList.remove("list");
-});
-
-listBtn.addEventListener('click', () => {
-    businessCards.classList.add('list');
-    businessCards.classList.remove('grid');
-
-});

@@ -23,25 +23,25 @@ async function getWeather() {
     }
 }
 
-async function getCurrent() {
-    try {
-        const response = await fetch(currentURL);
+// async function getCurrent() {
+//     try {
+//         const response = await fetch(currentURL);
 
-        if (response.ok) {
-            const data = await response.json();
-            displayCurrent(data);
+//         if (response.ok) {
+//             const data = await response.json();
+//             displayCurrent(data);
 
-        } else {
-            throw Error(await response.text())
-        }
-    } catch (error) {
-        console.error("Error parsing of fetching data", error)
-    }
-}
+//         } else {
+//             throw Error(await response.text())
+//         }
+//     } catch (error) {
+//         console.error("Error parsing of fetching data", error)
+//     }
+// }
 
-function displayCurrent(data) {
-    console.log(data)
-}
+
+
+
 
 function displayForecast(data) {
     days.forEach((dayNum) => {
@@ -58,13 +58,13 @@ function displayForecast(data) {
         <img src="${iconsrc}" alt="${data.list[dayNum].weather[0].description}">
         <h3>${condition}</h3>
         <p>Temperature: <span id="temp">${data.list[dayNum].main.temp}</span>&deg;F</p>
-        <p>Wind Speed: <span id="wind">${data.list[dayNum].wind.speed}</span> mph, ${compassDir}</p>
-        <p>Wind Chill: <span id="chill"></span></p>`
+        <p>Wind Speed: <span id="wind">${data.list[dayNum].wind.speed}</span> mph, ${compassDir}</p>`
+        const wind = document.createElement('p')
+        wind.innerHTML='<p>Wind Chill: <span id="chill"></span></p>'
+        forecastCard.appendChild(wind)
         weatherCard.appendChild(forecastCard)
     })
 
-    console.log(data);
-    console.log(new Date(data.list[11].dt * 1000).toLocaleDateString('en-us', { weekday: "long", year: "numeric", month: "short", day: "numeric" }))
 }
 
 function getDirection(deg) { // Convert directional degrees to cardinal directions.
@@ -92,5 +92,5 @@ function titleCase(msg) {
 }
 
 getWeather();
-getCurrent();
+
 

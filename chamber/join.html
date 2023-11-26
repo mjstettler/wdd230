@@ -58,39 +58,41 @@
     </nav>
 
     <main class="joinMain">
-        <form class="joinForm" method="get" action="thankyou.html">
-            <fieldset class="parent">
-                <legend>Account Setup</legend>
-                <fieldset>
-                    <legend class="heading">Personal Information</legend>
-                    <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
-                    <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
-                    <label class="top">Title/Position <input type="text" name="title" id="title"
-                            pattern=".{,7}"></label>
-                    <label class="top">Email* <input type="email" name="email" id="email"
-                            placeholder="YourEmail@gmail.com" required></label>
-                    <label>Phone* <input type="tel" name="phone" id="phone" placeholder="5551234545" required></label>
+        <div>
+            <form class="joinForm" method="get" action="thankyou.html">
+                <fieldset class="parent">
+                    <legend>Account Setup</legend>
+                    <fieldset>
+                        <legend class="heading">Personal Information</legend>
+                        <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
+                        <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
+                        <label class="top">Title/Position <input type="text" name="title" id="title"
+                                pattern=".{,7}"></label>
+                        <label class="top">Email* <input type="email" name="email" id="email"
+                                placeholder="YourEmail@gmail.com" required></label>
+                        <label>Phone* <input type="tel" name="phone" id="phone" placeholder="5551234545" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="heading">Business Information</legend>
+                        <label>Business/Organization* <input type="text" name="org" id="org" required></label>
+                        <br><br>
+                        <div>Select a Membership Tier</div>
+                        <label class="side"><input type="radio" name="tier" value="NP">NP (Non-Profit)</label>
+                        <label class="side"><input type="radio" name="tier" value="Bronze">Bronze</label>
+                        <label class="side"><input type="radio" name="tier" value="Silver">Silver</label>
+                        <label class="side"><input type="radio" name="tier" value="Gold">Gold</label>
+                        <br><br>
+                        <label class="side businessText">Describe your Business <br><textarea name="description"
+                                id="description" cols="30" rows="10"
+                                placeholder="Write about your business..."></textarea></label>
+                        <br><br>
+                        <label><input type="hidden" name="timeStamp" id="timeStamp"></label>
+                        <br>
+                    </fieldset>
+                    <input type="submit" name="joinBtn" id="joinBtn" value="Join the Community">
                 </fieldset>
-                <fieldset>
-                    <legend class="heading">Business Information</legend>
-                    <label>Business/Organization* <input type="text" name="org" id="org" required></label>
-                    <br><br>
-                    <div>Select a Membership Tier</div>
-                    <label class="side"><input type="radio" name="tier" value="NP">NP (Non-Profit)</label>
-                    <label class="side"><input type="radio" name="tier" value="Bronze">Bronze</label>
-                    <label class="side"><input type="radio" name="tier" value="Silver">Silver</label>
-                    <label class="side"><input type="radio" name="tier" value="Gold">Gold</label>
-                    <br><br>
-                    <label class="side businessText">Describe your Business <br><textarea name="description"
-                            id="description" cols="30" rows="10"
-                            placeholder="Write about your business..."></textarea></label>
-                    <br><br>
-                    <label><input type="hidden" name="timeStamp" id="timeStamp"></label>
-                    <br>
-                </fieldset>
-                <input type="submit" name="joinBtn" id="joinBtn" value="Join the Community">
-            </fieldset>
-        </form>
+            </form>
+        </div>
 
         <table>
             <caption>Membership Benefit Comparison <br>*NP - Non-Profits receive Membership free</caption>
@@ -230,7 +232,7 @@
     </footer>
     <script src="scripts/dates.js"></script>
     <script src="scripts/events.js"></script>
-    <script src="scripts/windchill.js"></script>
+
 
 </body>
 

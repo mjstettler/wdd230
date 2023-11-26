@@ -1,6 +1,6 @@
-let temp = document.querySelector('#temp').textContent;
-let wind = document.querySelector('#wind').textContent;
-let windChill = document.querySelector('#chill');
+let temp = document.querySelector('#temp');
+let wind = document.querySelector('#wind');
+let windChill = document.querySelector('span#chill');
 
 if (temp <= 50 && wind > 3.0) {
     const result = windChillFactor(temp, wind)

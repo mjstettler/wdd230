@@ -181,14 +181,24 @@ main {
 .events {
     margin-top: 10px;
     display: block;
-?    text-align: center;
-
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.mySlides {
+    /* display: none; */
+    background-image: linear-gradient(160deg, var(--accent2), var(--accent1));
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
 .spotlights {
     display: grid;
     grid-template-columns: 1fr;
-
     width: 100%;
     padding-bottom: 1rem;
     gap: 20px;
@@ -196,7 +206,17 @@ main {
 }
 
 .spotlights .card {
-    background-image: linear-gradient(160deg, var(--accent2), var(--accent1));
+    background-image: linear-gradient(160deg, var(--accent2),#ccc, var(--accent1));
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.spotlights .card a {
+    color: black;
 }
 
 .card {
@@ -352,7 +372,14 @@ footer .info {
     display: flex;
     flex-direction: column;
     gap: 100px;
+
 }
+.joinMain div:nth-child(1){
+    background-color: var(--secondaryClr);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 form input {
     display: block;
     width: 100%;
