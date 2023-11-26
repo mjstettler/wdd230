@@ -23,26 +23,6 @@ async function getWeather() {
     }
 }
 
-// async function getCurrent() {
-//     try {
-//         const response = await fetch(currentURL);
-
-//         if (response.ok) {
-//             const data = await response.json();
-//             displayCurrent(data);
-
-//         } else {
-//             throw Error(await response.text())
-//         }
-//     } catch (error) {
-//         console.error("Error parsing of fetching data", error)
-//     }
-// }
-
-
-
-
-
 function displayForecast(data) {
     days.forEach((dayNum) => {
         const forecastCard = document.createElement('div');
@@ -60,12 +40,25 @@ function displayForecast(data) {
         <p>Temperature: <span id="temp">${data.list[dayNum].main.temp}</span>&deg;F</p>
         <p>Wind Speed: <span id="wind">${data.list[dayNum].wind.speed}</span> mph, ${compassDir}</p>`
         const wind = document.createElement('p')
-        wind.innerHTML='<p>Wind Chill: <span id="chill"></span></p>'
+        if (data.list[dayNum].main.temp <= 50 && data.list[dayNum].wind.speed > 3.0) {
+            const chill = windChillFactor(data.list[dayNum].main.temp, data.list[dayNum].wind.speed)
+            wind.innerHTML=`<p>Wind Chill: <span id="chill">${chill}&deg;F</span></p>`
+        }else {
+            wind.innerHTML=`<p>Wind Chill: <span id="chill">N/A</span></p>`
+        }
+        
         forecastCard.appendChild(wind)
         weatherCard.appendChild(forecastCard)
     })
 
 }
+
+function windChillFactor(temp, wind) {
+    const chill = 35.74+0.6215*temp-35.75*Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind,0.16)
+
+    return chill.toFixed(1)
+}
+
 
 function getDirection(deg) { // Convert directional degrees to cardinal directions.
     if (deg >= 338 || deg <= 22) {
