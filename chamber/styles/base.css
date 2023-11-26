@@ -356,10 +356,6 @@ footer .info {
     border-radius: 5px;
 }
 
-form input {
-    display: block;
-    width: 100%;
-}
 form {
     max-width: 500px;
     
@@ -370,7 +366,9 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="tel"]
     border-radius: 5px;
     border: thin solid var(--accent2);
 }
-
+input[type="radio"] {
+    margin-right: .5rem;
+}
 
 fieldset {
     border-radius: 5px;
@@ -406,13 +404,12 @@ form legend, form div {
     text-decoration: underline;
 }
 form label.top input {
-    
-    
+    display: block;
     margin: 10px;
 }
 form label.side{
     display: block;
-    padding: .75rem 0;
+    padding: .75rem;
     font-size: large;
 }
 
