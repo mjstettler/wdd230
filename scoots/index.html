@@ -1,35 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots: Adventure Awaits</title>
+    <title>Scoots: Adventure Rides</title>
     <meta name="author" content="Mike Stettler">
-    <meta name="description" content="Home page for Scoots ATV adventure rentals">
-    <meta property="og:title" content="Scoots ATV rentals">
+    <meta name="description" content="Home page for Scoots ATV, Sooter, and Jeep adventure rentals">
+    <meta property="og:title" content="Scoots ATV, Scooter, and Jeep rentals">
     <meta property="og:type" content="Business">
     <meta property="og:url" content="https://mjstettler.github.io/wdd230/scoots/index.html">
     <meta property="og:image" content="">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+
 </head>
+
 <body>
     <header>
-
+        <img src="images/logo.png" alt="Scoots logo">
+        <h1>Scoots: Adventure Rides</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
 
     <main>
+        <div class="banner">
+            Today's Current temps: <br>
+            High:<span></span> Low:<span></span>
+        </div>
 
+        <div class="carousel"></div>
+        <h2>Your Adventure Awaits</h2>
+        <p>About Us: <br>
+            Scoots was established in 2010. We offer the best adventures on Cozumel, welcoming everyone. Whether you
+            are a Tourist, local, or a diehard Jeep and Scooter enthusiast we will help you scoot away
+            today! Choose adventure, choose Scoots.</p>
+
+        <section class="card">
+            <h2>Scooters</h2>
+            <div class="itemCard">
+                <p>If you want to experience Cozumel like the locals, there is no better way than by Scooter. Enjoy the
+                    island view and air as you cruise around. Available in 1 or 2 person models.</p>
+
+                <img src="images/renting-a-scooter-in-cozumel-mexico-1024x768.webp" alt="">
+
+                <button class="bookBtn"
+                    onclick="window.location.href='https://mjstettler.github.io/wdd230/scoots/rental.html'">Book
+                    Now!</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>ATVs</h2>
+            <div class="itemCard">
+                <img src="images/atv.jpg" alt="">
+                
+                <button class="bookBtn"
+                    onclick="window.location.href='https://mjstettler.github.io/wdd230/scoots/rental.html'">Book Now!
+                </button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Jeeps</h2>
+            <div class="itemCard">
+                <img src="images/jeep-rental-cozumel-buccino-1.webp" alt="">
+
+                <button class="bookBtn"
+                    onclick="window.location.href='https://mjstettler.github.io/wdd230/scoots/rental.html'">Book
+                    Now!</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Weather</h2>
+            <div class="weather">
+                <h3>Today</h3>
+            </div>
+            <div class="weather">
+                <h3>Tomorrow</h3>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        <img src="images/logo.png" alt="scoots logo">
+        Scoots &copy; 2023 | <a href="https://maps.app.goo.gl/bxGXtgXGKF8jkp6B7">📍 Google Maps</a> <a
+            href="contact.html" target="_blank">Contacts Us</a> | <a href="reference.html">Cited Works</a>
     </footer>
+    <script src="scripts/weather.js"></script>
 </body>
+
 </html>
