@@ -24,16 +24,6 @@ input:required:focus{
     background-color: rgba(100, 0, 0, .1);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 480px;
-    
-}
-fieldset {
-    display: grid;
-
-}
 
 button#scrollToTop {
     display: none;

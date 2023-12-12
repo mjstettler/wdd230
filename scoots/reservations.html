@@ -42,9 +42,9 @@
                 <fieldset>
                     <legend>Renter Information</legend>
 
-                    <label class="required">Full Name: <input  type="text" id="fullName" name="fullName"
+                    <label class="required">Full Name: <input type="text" id="fullName" name="fullName"
                             required></label>
-                    <label class="required">Email: <input  type="email" id="email" name="email" required></label>
+                    <label class="required">Email: <input type="email" id="email" name="email" required></label>
                     <label>Phone: <input type="tel" name="phone" id="phone"></label>
                     <label>Country: <input type="text" name="country" id="country"></label>
                     <label>Cruise Line (if applicable): <input type="text" id="cruise" name="cruise"></label>
@@ -53,55 +53,52 @@
                 <!-- Rental Details Fieldset -->
                 <fieldset>
                     <legend>Rental Details</legend>
-                    <label class="required">Todays Date: <input  type="date" id="todayDate"
-                            name="todayDate" required></label>
-                    <label class="required">Start Date: <input  type="date" id="startDate"
-                            name="startDate" required></label>
-                    <label class="required">End Date: <input  type="date" id="endDate" name="endDate"
+                    <label class="required">Todays Date: <input type="date" id="todayDate" name="todayDate"
                             required></label>
+                    <label class="required">Start Date: <input type="date" id="startDate" name="startDate"
+                            required></label>
+                    <label class="required">End Date: <input type="date" id="endDate" name="endDate" required></label>
 
-                            <label class="required" for="vehicle">Vehicle type: </label>
-                            <select name="vehicle" id="vehicle">
-                                <option value="select one">--select one--</option>
-                                <optgroup label="Scooters">
-                                    <option value="Honda Metro (1)">Honda Metro (1)</option>
-                                    <option value="Honda Dio (2)">Honda Dio (2)</option>
-                                    <option value="Honda PCX150 (2)">Honda PCX150 (2)</option>
-                                </optgroup>
+                    <!-- Rental Vehicle selection -->
+                    <label class="required" for="vehicle">Vehicle type:
+                        <select name="vehicle" id="vehicle">
+                            <option value="select one">--select one--</option>
+                            <optgroup label="Scooters">
+                                <option value="Honda Metro (1)">Honda Metro (1)</option>
+                                <option value="Honda Dio (2)">Honda Dio (2)</option>
+                                <option value="Honda PCX150 (2)">Honda PCX150 (2)</option>
+                            </optgroup>
+                            <optgroup label="ATV">
+                                <option value="Honda Pioneer (4)">Honda Pioneer (4)</option>
+                            </optgroup>
+                            <optgroup label="Jeeps">
+                                <option value="Jeep Wrangler 4dr (5)">Jeep Wrangler 4dr (5)</option>
+                                <option value="Jeep Wrangler 2dr (4)">Jeep Wrangler 2dr (4)</option>
+                            </optgroup>
+                        </select></label>
 
-                                <optgroup label="ATV">
-                                    <option value="Honda Pioneer (4)">Honda Pioneer (4)</option>
-                                </optgroup>
-
-                                <optgroup label="Jeeps">
-                                    <option value="Jeep Wrangler 4dr (5)">Jeep Wrangler 4dr (5)</option>
-                                    <option value="Jeep Wrangler 2dr (4)">Jeep Wrangler 2dr (4)</option>
-                                </optgroup>
-                            </select>
-                            <label class="required">Number of Vehicles: <select name="amount" id="amount">
-                                <option value="0">--select one--</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                
-                                
-                                
-                                
-                                
-                            </select></label>
+                        <!-- Number of vehicles being rented -->
+                    <label class="required">Number of Vehicles: <select name="amount" id="amount">
+                            <option value="0">--select one--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></label>
 
                     <p class="required">Rental Duration:</p>
                     <label class="aside">Half day (3 hrs): <input type="radio" name="duration" id="half"
                             value="Half day (3 hrs):" required></label>
                     <label class="aside">Full day (4+ hrs): <input type="radio" name="duration" id="full"
                             value="Full day (4+ hrs):"></label>
+                    <label>Accommodations/Comments: <textarea name="Comments" id="Comments" cols="30" rows="10"
+                            placeholder="drop-off request and location"></textarea></label>
 
                 </fieldset>
 
@@ -182,7 +179,7 @@
 
                     <!--Agreement to terms and conditions-->
                     <label class="required">
-                        <input  type="checkbox" name="agree" required>
+                        <input type="checkbox" name="agree" required>
                         I have read and agree to the terms and conditions.
                     </label>
                 </fieldset>
