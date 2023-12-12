@@ -34,10 +34,105 @@
     </header>
 
     <main>
-    
-    
-    
-    
+        <form action="submitrental.html" method="post" id="rentalForm">
+
+            <!-- Renter Information Fieldset -->
+            <fieldset>
+                <legend>Renter Information</legend>
+                <!-- Other form fields can be added here -->
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <!-- Rental Details Fieldset -->
+            <fieldset>
+                <legend>Rental Details</legend>
+                <!-- Other form fields can be added here -->
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </fieldset>
+
+            <!-- Agreement Fieldset -->
+            <fieldset id="agreement">
+                <legend>Terms and Conditions</legend>
+                <p>Please read and agree to the terms and conditions before proceeding.</p>
+                <p>Rental Service Agreement (the "Agreement") is entered into by and between the undersigned renter
+                    ("Renter") and Scoots: Adventure Rides rental company ("Scoots"). By accepting the terms and
+                    conditions outlined in this Agreement, Renter agrees to abide by the rules and regulations set forth
+                    herein. <br>
+
+                    1. Reservation and Security Deposit:
+
+                    A reservation is confirmed upon receipt of a $50 security deposit.
+                    The security deposit is refundable upon the return of the rented scooter, ATV, or jeep in the same
+                    condition as it was at the time of rental. <br>
+                    2. Driver's License Requirement:
+
+                    Renter must present a valid driver's license at the time of rental. <br>
+                    3. Age Restriction:
+
+                    No one under the age of 12 is allowed to ride on the scooters. <br>
+                    4. Fuel Charge:
+
+                    The rental fee does not include fuel charges. Renter is responsible for refueling the vehicle to its
+                    original level before returning it. <br>
+                    5. Mileage:
+
+                    Unlimited mileage is included in the rental. <br>
+                    6. Insurance:
+
+                    Liability insurance is included in the rental fee.
+                    Damage insurance is available for purchase at an additional cost. <br>
+                    7. Delivery:
+
+                    Free delivery is provided to Cozumel hotels or Airbnbs for rentals of 2 days or more. <br>
+                    8. Payment Methods:
+
+                    Payments can be made via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo. <br>
+                    9. Return Location:
+
+                    Rentals may be returned to either physical location specified by Scoots. <br>
+                    10. Acknowledgment:
+                    - Renter acknowledges that they have inspected the scooter, ATV, or jeep and found it to be in good
+                    condition. <br>
+
+                    11. Responsibility:
+                    - Renter is responsible for any fines, penalties, or legal consequences incurred during the rental
+                    period. <br>
+
+
+                    12. Indemnification:
+                    - Renter agrees to indemnify and hold Scoots harmless from any claims, losses, or damages arising
+                    from the use or operation of the rented vehicle. <br>
+
+                    13. Governing Law:
+                    - This Agreement is governed by the laws of the jurisdiction in which Scoots operates. <br>
+
+                    14. Entire Agreement:
+                    - This Agreement constitutes the entire understanding between Scoots and Renter and supersedes any
+                    prior agreements or understandings, whether written or oral. <br>
+
+                    15. Modification:
+                    - Any modification to this Agreement must be in writing and signed by both parties. <br>
+
+                    By checking the box below, the Renter acknowledges that they have read, understood, and agreed to
+                    the terms
+                    and conditions of this Scoot Rental Service Agreement.</p>
+                <label>
+                    <input type="checkbox" name="agree" required>
+                    I have read and agree to the terms and conditions.
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+
     </main>
 
     <footer>

@@ -34,10 +34,46 @@
     </header>
 
     <main>
-        
-        
-        
-        
+        <div>General Contact info</div>
+        <section>
+            <h2>Locations</h2>
+            <div>
+                Location 1
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3736.8775830688005!2d-86.94974800000001!3d20.511244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDMwJzQwLjUiTiA4NsKwNTYnNTkuMSJX!5e0!3m2!1sen!2sus!4v1702362088965!5m2!1sen!2sus"
+                    width="400" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>Playa del Carmen</h3>
+                <p>Phone: +52 (987)-888-8811</p>
+                <p>Hours: M-F 8AM - 10PM Sunday 10AM - 5PM</p>
+            </div>
+            <div>
+                Location 2
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d277.80989097289614!2d-86.97563988308477!3d20.47548086985951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sterminal%20puerta%20maya%20cozumel%20mexico!5e0!3m2!1sen!2sus!4v1702362258663!5m2!1sen!2sus"
+                    width="400" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>Terminal Puerta Maya</h3>
+                <p>Phone: +52 (987)-888-8812</p>
+                <p>Hours: M-F 9AM - 9PM Sunday 10AM - 5PM</p>
+
+            </div>
+        </section>
+        <div>
+            <h3>Have a question? Send us a Message!</h3>
+            <form method="get" onsubmit="alert('Thank you, your message has been sent.')" action="thankyou.html">
+                <label>Name*<input type="text" id="name" name="name" required></label>
+                <label>Email*<input type="email" id="email" placeholder="Email@domain.com" name="email" required></label>
+                <label>Phone <input type="tel" id="phone" name="phone" placeholder="(888) 888-8888"></label>
+                <label>Message<textarea name="message" id="message" cols="50" rows="20" placeholder="Type your message here"></textarea></label>
+                
+                <button type="submit" id="contactBtn">Send Message</button>
+            </form>
+        </div>
+
+
+
+
     </main>
 
     <footer>
