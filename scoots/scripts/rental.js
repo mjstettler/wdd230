@@ -24,7 +24,12 @@ async function getData() {
 function displayRentals(rentals) {
     rentals.rentals.forEach(rental => {
         const row = document.createElement('tr');
-
+        const name = document.createElement('td');
+        const capacity = document.createElement('td');
+        const rHalf = document.createElement('td');
+        const rFull = document.createElement('td');
+        const wHalf = document.createElement('td');
+        const wFull = document.createElement('td');
 
         name = rental.name
     });
