@@ -9,26 +9,45 @@ async function getData() {
         const response = await fetch(rentalUrl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
-            displayRentals(data);
+
+            console.log(data.rentals);
+
+            displayRentals(data.rentals);
+            
         } else {
             throw Error(await response.text())
         }
     } catch (error) {
         console.error("Error parsing or fetching data", error)
     }
-
-    const response = await fetch(rentalUrl);
-    const data = await response.json();
-    displayRentals(data.rentals);
 }
 
 function displayRentals(rentals) {
-    rentals[0].scooters.forEach(rental => {
+    rentals.forEach(rental => {
         const row = document.createElement('tr');
-        console.log(rental)
+
+        const name = document.createElement('td');
+        const capacity = document.createElement('td');
+        const rHalf = document.createElement('td');
+        const rFull = document.createElement('td');
+        const wHalf = document.createElement('td');
+        const wFull = document.createElement('td');
         
+        name.textContent = rental.name;
+        capacity.textContent = rental.capacity;
+        wHalf.textContent = rental.price[0].walkin[0].half;
+        wFull.textContent= rental.price[0].walkin[0].whole;
+        rHalf.textContent = rental.price[1].reservation[0].half
+        rFull.textContent = rental.price[1].reservation[0].whole
+
+        row.append(name,capacity,rHalf,rFull,wHalf,wFull)
+        rentalTable.appendChild(row)
+        console.log(rFull)
     });
 }
+
+
+
+
 
 getData();
