@@ -36,3 +36,4 @@ function displayRentals(rentals) {
         name = rental.name
     });
 }
+getData();
