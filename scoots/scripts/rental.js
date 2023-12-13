@@ -1,13 +1,15 @@
 // Get table body
 const rentalTable = document.querySelector('.tableBody')
-const rentalUrl = 'https://mjstettler.github.io/wdd230/scoots/data/rental.json'
+const rentalUrl = 'https://mjstettler.github.io/wdd230/scoots/data/rentals.json'
+
+
 
 async function getData() {
     try {
         const response = await fetch(rentalUrl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data)
+            console.log(data);
             displayRentals(data);
         } else {
             throw Error(await response.text())
