@@ -20,20 +20,15 @@ async function getData() {
 
     const response = await fetch(rentalUrl);
     const data = await response.json();
-    displayRentals(data);
+    displayRentals(data.rentals);
 }
 
 function displayRentals(rentals) {
-    rentals.rentals.forEach(rental => {
+    rentals[0].scooters.forEach(rental => {
         const row = document.createElement('tr');
-        const name = document.createElement('td');
-        const capacity = document.createElement('td');
-        const rHalf = document.createElement('td');
-        const rFull = document.createElement('td');
-        const wHalf = document.createElement('td');
-        const wFull = document.createElement('td');
-
-        name = rental.name
+        console.log(rental)
+        
     });
 }
+
 getData();

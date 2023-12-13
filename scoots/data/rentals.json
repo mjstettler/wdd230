@@ -1,144 +1,132 @@
 {
     "rentals": [
         {
-            "scooters": [
+            "name": "Honda Metro",
+            "capacity": 1,
+            "price": [
                 {
-                    "name": "Honda Metro",
-                    "capacity": 1,
-                    "price": [
+                    "walkin": [
                         {
-                            "walkin": [
-                                {
-                                    "half": "$25",
-                                    "whole": "$35"
-                                }
-                            ]
-                        },
-                        {
-                            "reservation": [
-                                {
-                                    "half": "$20",
-                                    "whole": "$30"
-                                }
-                            ]
+                            "half": "$25",
+                            "whole": "$35"
                         }
                     ]
                 },
                 {
-                    "name": "Honda Dio",
-                    "capacity": 2,
-                    "price": [
+                    "reservation": [
                         {
-                            "walkin": [
-                                {
-                                    "half": "$35",
-                                    "whole": "$45"
-                                }
-                            ]
-                        },
-                        {
-                            "reservation": [
-                                {
-                                    "half": "$30",
-                                    "whole": "$40"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Honda PCX150",
-                    "capacity": 2,
-                    "price": [
-                        {
-                            "walkin": [
-                                {
-                                    "half": "$45",
-                                    "whole": "$55"
-                                }
-                            ]
-                        },
-                        {
-                            "reservation": [
-                                {
-                                    "half": "$40",
-                                    "whole": "$50"
-                                }
-                            ]
+                            "half": "$20",
+                            "whole": "$30"
                         }
                     ]
                 }
             ]
         },
         {
-            "atv": [
+            "name": "Honda Dio",
+            "capacity": 2,
+            "price": [
                 {
-                    "name": "Honda Pioneer",
-                    "capacity": 4,
-                    "price": [
+                    "walkin": [
                         {
-                            "walkin": [
-                                {
-                                    "half": "$60",
-                                    "whole": "$80"
-                                }
-                            ]
-                        },
+                            "half": "$35",
+                            "whole": "$45"
+                        }
+                    ]
+                },
+                {
+                    "reservation": [
                         {
-                            "reservation": [
-                                {
-                                    "half": "$50",
-                                    "whole": "$70"
-                                }
-                            ]
+                            "half": "$30",
+                            "whole": "$40"
                         }
                     ]
                 }
             ]
         },
         {
-            "jeeps": [
+            "name": "Honda PCX150",
+            "capacity": 2,
+            "price": [
                 {
-                    "name": "Wrangler 4-door with a/c",
-                    "capacity": 5,
-                    "price": [
+                    "walkin": [
                         {
-                            "walkin": [
-                                {
-                                    "half": "$85",
-                                    "whole": "$125"
-                                }
-                            ]
-                        },
-                        {
-                            "reservation": [
-                                {
-                                    "half": "$70",
-                                    "whole": "$100"
-                                }
-                            ]
+                            "half": "$45",
+                            "whole": "$55"
                         }
                     ]
                 },
                 {
-                    "name": "Wrangler 2-door",
-                    "capacity": 4,
-                    "price": [
+                    "reservation": [
                         {
-                            "walkin": [
-                                {
-                                    "half": "$70",
-                                    "whole": "$90"
-                                }
-                            ]
-                        },
+                            "half": "$40",
+                            "whole": "$50"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Honda Pioneer",
+            "capacity": 4,
+            "price": [
+                {
+                    "walkin": [
                         {
-                            "reservation": [
-                                {
-                                    "half": "$60",
-                                    "whole": "$85"
-                                }
-                            ]
+                            "half": "$60",
+                            "whole": "$80"
+                        }
+                    ]
+                },
+                {
+                    "reservation": [
+                        {
+                            "half": "$50",
+                            "whole": "$70"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wrangler 4-door with a/c",
+            "capacity": 5,
+            "price": [
+                {
+                    "walkin": [
+                        {
+                            "half": "$85",
+                            "whole": "$125"
+                        }
+                    ]
+                },
+                {
+                    "reservation": [
+                        {
+                            "half": "$70",
+                            "whole": "$100"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wrangler 2-door",
+            "capacity": 4,
+            "price": [
+                {
+                    "walkin": [
+                        {
+                            "half": "$70",
+                            "whole": "$90"
+                        }
+                    ]
+                },
+                {
+                    "reservation": [
+                        {
+                            "half": "$60",
+                            "whole": "$85"
                         }
                     ]
                 }
