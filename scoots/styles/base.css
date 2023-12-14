@@ -1,7 +1,7 @@
 
 * {
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -227,6 +227,7 @@ p{
 .locations h3,h2,.contact h3{
     font-size: 2em;
 }
+
 /* Contact us form */
 .contact{
     display: flex;
@@ -251,6 +252,37 @@ input, textarea{
     box-sizing: border-box;
     margin-bottom: 8px;
 }
+.form .aside{
+    display: flex;
+    flex-direction: column;
+}
+.form .aside input[type="radio"]{
+    transform: scale(1.5);
+}
+.form .aside input[type="radio"]:checked ~ label{
+    transform: scale(1.5);
+}
+
+
+/* form required input */
+div.form {
+    background-color: var(--primary-color);
+}
+form fieldset{
+    border: thin solid rgba(0, 0, 0, .1);
+}
+.required::before {
+    content: '*';
+    color: red;
+}
+
+input:required:focus{
+    border-bottom: 2px solid red ;
+    outline: none;
+    background-color: rgba(100, 0, 0, .1);
+}
+
+
 
 /* Rental table */
 #rentalTable {
@@ -269,9 +301,7 @@ input, textarea{
 tbody tr:nth-child(even){
     background-color: var(--primary-color);
 }
-/* #rentalTable tr#resType:nth-child(even){
-    background-color: var(--border-color); */
-/* } */
+
 #rentalTable td#reservation {
     background-color: var(--accent2-color);
     font-size: x-large;
@@ -307,25 +337,6 @@ footer div:nth-child(1){
 }
 footer div a{
     padding: 1rem;
-}
-
-/* form required input */
-div.form {
-    background-color: #d9bea17c;
-}
-form fieldset{
-    border: thin solid rgba(0, 0, 0, .1);
-}
-.required::before {
-    content: '*';
-    color: red;
-    
-}
-
-input:required:focus{
-    border-bottom: 2px solid red ;
-    outline: none;
-    background-color: rgba(100, 0, 0, .1);
 }
 
 /* Scroll button */
