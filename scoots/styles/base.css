@@ -353,4 +353,64 @@ main button#scrollToTop {
     cursor: pointer;
     
 }
+.weatherCard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.weather {
+    background-color: #1f91b79b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+}
+
+.weather h3 {
+    margin-bottom: 10px;
+}
+
+.weather img {
+    margin-top: 10px;
+}
+
+.temp {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.description {
+    margin-top: 5px;
+}
+
+.bottomL,
+.bottomR {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.bottomL img,
+.bottomR img {
+    margin-right: 5px;
+}
+
+.bottomL p,
+.bottomR p {
+    margin: 0;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.left {
+    margin-right: auto;
+}
+
 

@@ -101,7 +101,7 @@ function displayCurrentWeather(current) {
 
     const temperature = Math.round(current.main.temp)
     const feelTemp = Math.round(current.main.feels_like)
-    temp.innerHTML = `${temperature}&deg;F <span>Real Feel: ${feelTemp}&deg;F</span>`;
+    temp.innerHTML = `${temperature}&deg;F <br><span>Real Feel: ${feelTemp}&deg;F</span>`;
 
     condition.textContent = current.weather[0].description;
 
