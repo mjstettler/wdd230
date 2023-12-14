@@ -10,6 +10,13 @@
         display: flex;
     }
 
+    .card img{
+        margin-top: 20px;
+        width: 50%;
+        height: auto;
+        
+    }
+    
     header{
         display: grid;
         grid-template-columns: 1fr 1fr;
