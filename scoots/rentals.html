@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots Rentals</title>
+    <title>Rentals</title>
     <meta name="author" content="Mike Stettler">
     <meta name="description" content="Adventure is Just a Rental Away">
     <meta property="og:title" content="Scoots ATV, Scooter, and Jeep rentals">
@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 
 </head>
@@ -23,9 +25,10 @@
 <body>
     <header>
         <a href="index.html"><img src="images/logo.png" alt="Scoots logo"></a>
-        <h1>Rentals</h1>
+        <h1>Scoots: Adventure Rides</h1>
+        <button id="menu"></button>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
@@ -37,64 +40,70 @@
     <main>
         <section>
             <h2>Scooters</h2>
-            <div>
-                <img src="images/metro.webp" alt="" width="300">
-                <h3>Honda Metro</h3>
-                <p>Passenger: 1</p>
-                <button><a href="#table">See Pricing</a></button>
-            </div>
+            <div class="vehicles">
+                <div class="itemCard">
+                    <img src="images/metro.webp" alt="" width="300">
+                    <h3>Honda Metro</h3>
+                    <p>Passenger: 1</p>
+                    <button><a href="#table">See Pricing</a></button>
+                </div>
 
-            <div>
-                <img src="images/dio.webp" alt="" width="300">
-                <h3>Honda Dio</h3>
-                <p>Passengers: 2</p>
-                <button><a href="#table">See Pricing</a></button>
-            </div>
+                <div class="itemCard">
+                    <img src="images/dio.webp" alt="" width="300">
+                    <h3>Honda Dio</h3>
+                    <p>Passengers: 2</p>
+                    <button><a href="#table">See Pricing</a></button>
+                </div>
 
-            <div>
-                <img src="images/rsz_pcx.webp" alt="" width="300">
-                <h3>Honda PCX</h3>
-                <p>Passengers: 2</p>
-                <button><a href="#table">See Pricing</a></button>
+                <div class="itemCard">
+                    <img src="images/rsz_pcx.webp" alt="" width="300">
+                    <h3>Honda PCX</h3>
+                    <p>Passengers: 2</p>
+                    <button><a href="#table">See Pricing</a></button>
+                </div>
             </div>
         </section>
         <section>
             <h2>ATV</h2>
-            <div>
-                <img src="images/rsz_1rsz_2pioneer.webp" alt="" width="500">
-                <h3>Honda Pioneer</h3>
-                <p>Passengers: 4</p>
-                <button><a href="#table">See Pricing</a></button>
+            <div class="vehicles">
+                <div class="itemCard jeep">
+                    <img src="images/rsz_1rsz_2pioneer.webp" alt="" width="500">
+                    <h3>Honda Pioneer</h3>
+                    <p>Passengers: 4</p>
+                    <button><a href="#table">See Pricing</a></button>
+                </div>
             </div>
         </section>
 
         <section>
             <h2>Jeeps</h2>
-            <div>
-                <img src="images/rsz_jeep4.webp" alt="" width="600">
-                <h3>Jeep Wrangler 4-door with a/c</h3>
-                <p>Passengers: 5</p>
-                <button><a href="#table">See Pricing</a></button>
-            </div>
-            <div>
-                <img src="images/jeep2.webp" alt="" width="600">
-                <h3>Jeep Wrangler 2-door</h3>
-                <p>Passengers: 4</p>
-                <button><a href="#table">See Pricing</a></button>
+            <div class="vehicles">
+                <div class="itemCard jeep">
+                    <img src="images/rsz_jeep4.webp" alt="" width="600">
+                    <h3>Jeep Wrangler 4-door with a/c</h3>
+                    <p>Passengers: 5</p>
+                    <button><a href="#table">See Pricing</a></button>
+                </div>
+                <div class="itemCard jeep" id="whiteJeep">
+                    <img src="images/jeep2.webp" alt="" width="600">
+                    <h3>Jeep Wrangler 2-door</h3>
+                    <p>Passengers: 4</p>
+                    <button><a href="#table">See Pricing</a></button>
+                </div>
             </div>
         </section>
 
         <div class="table" id="table">
             <h2>Rental Information</h2>
-            <table id="rental-table">
+            <table id="rentalTable">
                 <thead>
                     <tr>
-                        <th colspan="5">Rental Pricing</th>
+                        <th colspan="6">Rental Pricing</th>
                     </tr>
-                    <tr>
+                    <tr id="resType">
                         <td colspan="2"></td>
-                        <td colspan="2">Reservation</td>
-                        <td colspan="2">Walk-in</td>
+                        <td id="reservation" colspan="2">Reservation</td>
+                        <td id="walk" colspan="2">Walk-in</td>
                     </tr>
                     <tr>
                         <td>Name</td>
@@ -113,15 +122,26 @@
 
         </div>
 
-        <button id="scrollToTop" onclick="scrollToTop()">🔼</button>
+        <button id="scrollToTop" onclick="scrollToTop()"><img src="images/up.webp" alt="" width="48"></button>
     </main>
-
     <footer>
-        <img src="images/logo.png" alt="scoots logo">
-        Scoots &copy; 2023 | <a href="https://maps.app.goo.gl/bxGXtgXGKF8jkp6B7">📍 Google Maps</a> <a
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="scoots logo" width="200"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.webp" alt="facebook icon"
+                    width="48"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.webp" alt="instagram icon"
+                    width="48"></a>
+        </div>
+        <div>
+        Scoots&copy; 2023 | <a href="https://maps.app.goo.gl/bxGXtgXGKF8jkp6B7">📍 Google Maps</a> | <a
             href="contact.html" target="_blank">Contacts Us</a> | <a href="reference.html">Cited Works</a>
+        </div>
     </footer>
+
     <script src="scripts/rental.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/scroll.js"></script>
+
 </body>
 
 </html>

@@ -17,15 +17,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Scoots logo">
+        <a href="index.html"><img src="images/logo.png" alt="Scoots logo"></a>
+        <h1>Scoots: Adventure Rides</h1>
+        <button id="menu"></button>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
@@ -36,6 +39,7 @@
 
     <main>
         <div class="form">
+            <h2>Reservation Form</h2>
             <form action="submitrental.html" method="post" id="rentalForm">
 
                 <!-- Renter Information Fieldset -->
@@ -187,15 +191,27 @@
                 <button type="submit">Submit Reservation</button>
             </form>
         </div>
-        <button id="scrollToTop" onclick="scrollToTop()">🔼</button>arrow
-    </main>
+        <button id="scrollToTop" onclick="scrollToTop()"><img src="images/up.webp" alt="" width="48"></button>
 
+    </main>
     <footer>
-        <img src="images/logo.png" alt="scoots logo">
-        Scoots &copy; 2023 | <a href="https://maps.app.goo.gl/bxGXtgXGKF8jkp6B7">📍 Google Maps</a> <a
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="scoots logo" width="200"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.webp" alt="facebook icon"
+                    width="48"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.webp" alt="instagram icon"
+                    width="48"></a>
+        </div>
+        <div>
+        Scoots&copy; 2023 | <a href="https://maps.app.goo.gl/bxGXtgXGKF8jkp6B7">📍 Google Maps</a> | <a
             href="contact.html" target="_blank">Contacts Us</a> | <a href="reference.html">Cited Works</a>
+        </div>
     </footer>
+
     <script src="scripts/weather.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/scroll.js"></script>
+
 </body>
 
 </html>

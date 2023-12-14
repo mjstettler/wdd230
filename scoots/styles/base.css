@@ -5,6 +5,310 @@
     margin: 0;
 }
 
+:root {
+    --primary-color: #ecdfd1;
+    --accent1-color: #1f92b7;
+    --accent2-color: #fe7101;
+    --border-color: rgba(0,0,0,.1);
+}
+
+body, li, a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Architects Daughter', cursive;
+    
+}
+
+h2{
+    margin-top: 1rem;
+}
+header {
+    background-color: #ecdfd168;
+    padding: 2rem 0 0;
+    text-align: center;
+}
+header>a {
+
+    grid-column: 1;
+    justify-self: end; 
+    align-self: center;  
+}
+main {
+    max-width: 1440px;
+    margin: 0 auto
+}
+h1{
+    justify-self: start;
+    align-self: center;
+    grid-column: 2;
+}
+
+h2 {
+    background-color: var(--accent1-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Weather Banner */
+.banner{
+    background-color: var(--accent1-color);
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+main .banner p{
+    font-size: x-large;
+    font-weight: 600;
+}
+main .banner button{
+    padding: .2rem 1.5rem;
+}
+div.banner.hide {
+    display: none;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--accent1-color);
+    
+}
+
+nav ul {
+    display: block;
+    
+}
+nav ul li {
+    text-decoration: none;
+    display: none;
+    font-size: large;
+    font-weight: 800;
+    
+}
+nav ul li:hover {
+    background-color: var(--primary-color);
+    box-shadow: 6px 8px 3px var(--border-color);
+}
+nav li a {
+    display: block;
+    padding: 1.5rem;
+    border-right: thin solid var(--border-color);
+    text-decoration: none;
+    
+}
+
+nav li:nth-of-type(4) a{
+    border-right: none;
+    
+}
+
+nav a:visited{
+    color: black;
+}
+
+/* Hamburger Menu */
+#menu{
+    position: absolute;
+    top: .8rem;
+    right: .8rem;
+
+}
+#menu::before{
+    content: '☰';
+}
+
+#menu.open::before{
+    content: '✖';
+}
+.open li {
+    display: block;
+    width: 100%;
+    
+}
+.open li a {
+    display: block;
+}
+
+nav a.current{
+    background-color: var(--accent2-color);
+}
+
+/* Hero carousel */
+.hero {
+    display: flex;
+    height: 500px; /* Set your desired fixed height */
+    overflow: hidden;
+}
+
+.carousel {
+    flex: 1;
+    
+}
+
+.carousel img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+button{
+    background-color: var(--accent2-color);
+    padding: 1rem 2rem;
+    font-size: x-large;
+    font-weight: 600;
+    border: thin solid var(--border-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+button:hover{
+    box-shadow: 6px 8px 2px var(--border-color);
+    cursor: pointer;
+    background-color: #ff9d00;
+    transform: scale(1.05);
+    
+}
+
+.itemCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.itemCard.jeep img{
+    width: 100%;
+    height: auto;
+}
+.itemCard button{
+    position: absolute;
+    bottom: -5px;
+}
+
+h3:first-of-type {
+    text-align: center;
+    padding: 1rem;
+}
+
+main>p{
+    text-indent: 50px;
+}
+p{
+    max-width: 100ch;
+    margin: auto;
+    font-size: large;
+    padding: 1rem;
+}
+
+/* Contact us Locations */
+.locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    line-height: 0%;
+
+}
+
+.locations div:nth-of-type(2){
+    margin-top: 50px;
+}
+.locations h3,h2,.contact h3{
+    font-size: 2em;
+}
+/* Contact us form */
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    padding: 1rem;
+}
+.form{
+    max-width: 800px;
+    margin: 50px auto auto auto;
+    padding: 2rem;
+    border-radius: 5px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+/* Rental table */
+#rentalTable {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 30px auto 30px auto ;
+}
+
+#rentalTable td, #rentalTable th{
+    text-align: center;
+    padding: .5rem;
+    font-weight: 600;
+    border: thin solid var(--border-color);
+    
+}
+tbody tr:nth-child(even){
+    background-color: var(--primary-color);
+}
+/* #rentalTable tr#resType:nth-child(even){
+    background-color: var(--border-color); */
+/* } */
+#rentalTable td#reservation {
+    background-color: var(--accent2-color);
+    font-size: x-large;
+}
+#rentalTable td#walk{
+    font-size: x-large;
+    background-color: var(--accent1-color);
+}
+#rentalTable thead tr:nth-child(1){
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+#rentalTable thead tr:nth-child(3), thead tr:nth-child(2){
+    background-color: var(--border-color);
+}
+.itemCard.jeep#whiteJeep img{
+    margin-top: 20px;
+}
+
+/* footer */
+footer{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    text-align: center;
+    background-color: var(--border-color);
+}
+footer div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+}
+footer div a{
+    padding: 1rem;
+}
+
 /* form required input */
 div.form {
     background-color: #d9bea17c;
@@ -24,18 +328,18 @@ input:required:focus{
     background-color: rgba(100, 0, 0, .1);
 }
 
-
-button#scrollToTop {
+/* Scroll button */
+main button#scrollToTop {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff;
+    background-color: transparent;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
+    border-radius: 100%;
+    padding: 0;
     cursor: pointer;
     
-    
 }
+

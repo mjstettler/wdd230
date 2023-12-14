@@ -17,15 +17,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Scoots logo">
+        <a href="index.html"><img src="images/logo.png" alt="Scoots logo"></a>
+        <h1>Scoots: Adventure Rides</h1>
+        <button id="menu"></button>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
@@ -38,29 +41,29 @@
         <div>General Contact info</div>
         <section>
             <h2>Locations</h2>
-            <div>
-                Location 1
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3736.8775830688005!2d-86.94974800000001!3d20.511244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDMwJzQwLjUiTiA4NsKwNTYnNTkuMSJX!5e0!3m2!1sen!2sus!4v1702362088965!5m2!1sen!2sus"
-                    width="400" height="300" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h3>Playa del Carmen</h3>
-                <p>Phone: +52 (987)-888-8811</p>
-                <p>Hours: M-F 8AM - 10PM Sunday 10AM - 5PM</p>
-            </div>
-            <div>
-                Location 2
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d277.80989097289614!2d-86.97563988308477!3d20.47548086985951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sterminal%20puerta%20maya%20cozumel%20mexico!5e0!3m2!1sen!2sus!4v1702362258663!5m2!1sen!2sus"
-                    width="400" height="300" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h3>Terminal Puerta Maya</h3>
-                <p>Phone: +52 (987)-888-8812</p>
-                <p>Hours: M-F 9AM - 9PM Sunday 10AM - 5PM</p>
+            <div class="locations">
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3736.8775830688005!2d-86.94974800000001!3d20.511244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDMwJzQwLjUiTiA4NsKwNTYnNTkuMSJX!5e0!3m2!1sen!2sus!4v1702362088965!5m2!1sen!2sus"
+                        width="400" height="300" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3>Playa del Carmen</h3>
+                    <p>Phone: +52 (987)-888-8811</p>
+                    <p>Hours: M-F 8AM - 10PM Sunday 10AM - 5PM</p>
+                </div>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d277.80989097289614!2d-86.97563988308477!3d20.47548086985951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sterminal%20puerta%20maya%20cozumel%20mexico!5e0!3m2!1sen!2sus!4v1702362258663!5m2!1sen!2sus"
+                        width="400" height="300" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3>Terminal Puerta Maya</h3>
+                    <p>Phone: +52 (987)-888-8812</p>
+                    <p>Hours: M-F 9AM - 9PM Sunday 10AM - 5PM</p>
 
+                </div>
             </div>
         </section>
-        <div>
+        <div class="contact">
             <h3>Have a question? Send us a Message!</h3>
             <div class="form">
                 <form method="get" onsubmit="alert('Thank you, your message has been sent.')" action="thankyou.html">
@@ -78,15 +81,25 @@
 
 
 
-        <button id="scrollToTop" onclick="scrollToTop()">🔼</button>
+        <button id="scrollToTop" onclick="scrollToTop()"><img src="images/up.webp" alt="" width="48"></button>
     </main>
-
     <footer>
-        <img src="images/logo.png" alt="scoots logo">
-        Scoots &copy; 2023 | <a href="https://maps.app.goo.gl/bxGXtgXGKF8jkp6B7">📍 Google Maps</a> <a
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="scoots logo" width="200"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.webp" alt="facebook icon"
+                    width="48"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.webp" alt="instagram icon"
+                    width="48"></a>
+        </div>
+        <div>
+        Scoots&copy; 2023 | <a href="https://maps.app.goo.gl/bxGXtgXGKF8jkp6B7">📍 Google Maps</a> | <a
             href="contact.html" target="_blank">Contacts Us</a> | <a href="reference.html">Cited Works</a>
+        </div>
     </footer>
-    <script src="scripts/weather.js"></script>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/scroll.js"></script>
+
 </body>
 
 </html>

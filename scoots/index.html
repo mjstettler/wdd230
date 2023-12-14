@@ -17,16 +17,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Scoots logo">
+        <a href="index.html"><img src="images/logo.png" alt="Scoots logo"></a>
         <h1>Scoots: Adventure Rides</h1>
+        <button id="menu"></button>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
@@ -37,18 +39,45 @@
 
     <main>
         <div class="banner">
-            Today's Current temps: <br>
-            High:<span></span> Low:<span></span>
+            <p>Today's Current temps: High: <span class="cTempMax"></span> / Low: <span class="cTempLow"></span></p>
+            <button id="closeBtn">✖</button>
         </div>
 
-        <div class="carousel">
-            
+        <div class="hero">
+            <div class="carousel"><img src="images/ocean.webp" alt="Beach view with blue water" width="1200"></div>
+            <div class="carousel"><img src="images/jeep5.webp" alt="Jeep rock crawling" width="1200"></div>
+            <div class="carousel"><img src="images/Playa.webp" alt="ocean view" width="1200"></div>
+
         </div>
         <h2>Your Adventure Awaits</h2>
-        <p>About Us: <br>
-            Scoots was established in 2010. We offer the best adventures on Cozumel, welcoming everyone. Whether you
-            are a Tourist, local, or a diehard Jeep and Scooter enthusiast we will help you scoot away
-            today! Choose adventure, choose Scoots.</p>
+        <h3>About Us:</h3>
+        <p> Established in 2010, Scoots stands as the premier provider of exhilarating adventures on the breathtaking
+            island of Cozumel. Our story is one of passion, adventure, and a commitment to creating unforgettable
+            experiences for all who seek the thrill of exploration.
+
+            At Scoots, we believe that adventure knows no boundaries, and our doors are open to everyone—whether you're
+            a curious tourist, a proud local, or a dedicated Jeep and Scooter enthusiast. We understand that the spirit
+            of adventure resides in the hearts of those who yearn to discover the beauty of Cozumel, and we are here to
+            make that journey a reality.
+
+            Our fleet of scooters, ATVs, and Jeeps are more than just vehicles; they are the keys to unlocking the
+            hidden gems of Cozumel. Picture cruising along the coastal roads, feeling the ocean breeze on your face as
+            you navigate the island's vibrant streets. Imagine conquering off-road trails, the roar of an ATV beneath
+            you, as you venture into the heart of Cozumel's natural wonders. Envision the freedom of a Jeep ride, top
+            down, exploring the island at your own pace.
+
+            What sets Scoots apart is our unwavering commitment to delivering the best adventures imaginable. We take
+            pride in not just renting vehicles but providing the means for you to create lasting memories. Our team is
+            dedicated to ensuring your journey is filled with excitement, comfort, and the thrill of discovery.
+
+            So, whether you're seeking a leisurely scooter ride along the coastline, an adrenaline-pumping ATV excursion
+            through the jungle, or the freedom of a Jeep tour to Cozumel's iconic landmarks, Scoots is your trusted
+            partner. Choose adventure, choose Scoots, and let the exploration begin!
+
+            Embark on a journey with us, and let the spirit of Cozumel unfold before you. We invite you to join the
+            Scoots family and experience the island in a way that only true adventurers can.
+
+            Adventure awaits—come scoot away with us today!</p>
 
         <section class="card">
             <h2>Scooters</h2>
@@ -86,26 +115,70 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="weatherCard">
             <h2>Weather</h2>
-            <div class="weather">
+            <!-- Current day weather card (cWeather) -->
+            <div class="weather current">
                 <h3>Today</h3>
+                <img class="right" id="cIcon" src="" alt="" loading="lazy">
+                <p class="temp left" id="currentTemp"></p>
+                <p class="description" id="currentCondition"></p>
+                <!-- HI/LOW temp -->
+                <div class="bottomL">
+                    <img class="left" src="images/temperature.webp" alt="hot thermometer icon" width="50"
+                        loading="lazy">
+                    <p class="cTempMax right"></p>
+                    <img class="left" src="images/temperature-low.webp" alt="cold thermometer icon" width="50"
+                        loading="lazy">
+                    <p class="cTempLow right">30</p>
+                </div>
+                <!-- Humidity -->
+                <div class="bottomR">
+                    <img src="images/humidity.webp" alt="Humidity gauge icon" width="48" loading="lazy">
+                    <p id="cHumidity"></p>
+                </div>
             </div>
-            <div class="weather">
+
+            <!-- Tomorrow weather card (tWeather) -->
+            <div class="weather tomorrow">
                 <h3>Tomorrow</h3>
+                <img class="right" id="tIcon" src="" alt="" loading="lazy">
+                <p class="temp left" id="tomorrowTemp"></p>
+                <p class="description" id="tomorrowCondition"></p>
+                <div class="bottomL">
+                    <img src="images/wave.webp" alt="sea level icon">
+                    <p id="seaLevel"></p>
+                </div>
+                <div class="bottomR">
+                    <img src="images/humidity.webp" alt="" width="48" loading="lazy">
+                    <p id="tHumidity"></p>
+                </div>
+
             </div>
         </section>
 
-        <button id="scrollToTop" onclick="scrollToTop()">🔼</button>
+        <button id="scrollToTop" onclick="scrollToTop()"><img src="images/up.webp" alt="" width="48"></button>
     </main>
 
     <footer>
-        <img src="images/logo.png" alt="scoots logo">
-        Scoots &copy; 2023 | <a href="https://maps.app.goo.gl/bxGXtgXGKF8jkp6B7">📍 Google Maps</a> <a
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="scoots logo" width="200"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.webp" alt="facebook icon"
+                    width="48"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.webp" alt="instagram icon"
+                    width="48"></a>
+        </div>
+        <div>
+        Scoots&copy; 2023 | <a href="https://maps.app.goo.gl/bxGXtgXGKF8jkp6B7">📍 Google Maps</a> | <a
             href="contact.html" target="_blank">Contacts Us</a> | <a href="reference.html">Cited Works</a>
+        </div>
     </footer>
     <script src="scripts/weather.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/banner.js"></script>
+
 </body>
 
 </html>
